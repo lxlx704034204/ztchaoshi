@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams">
+        <ignore path="src/com/iteambuysale/zhongtuan/fragment/home/ShopCartFragment.java" />
+        <ignore path="src/com/teambuy/zhongtuan/activity/me/PersonInfoActivity.java" />
+        <ignore path="src/com/teambuy/zhongtuan/activity/me/unpay/UnpayActivity.java" />
+        <ignore path="src/com/teambuy/zhongtuan/fragment/home/NearByFragment.java" />
+        <ignore path="src/com/teambuy/zhongtuan/views/CategorysView.java" />
+    </issue>
+</lint>

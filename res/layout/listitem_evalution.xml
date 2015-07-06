@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_border" >
+
+    <TextView
+        android:id="@+id/tv_pro_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="17dip"
+        android:singleLine="true"
+        android:text="商品" />
+
+    <RatingBar
+        android:id="@+id/rb_ratingbar"
+        style="@style/EvaluationRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_pro_name"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2dip"
+        android:focusable="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3.1"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/tv_evalution_detial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pro_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="feichanghao" />
+
+    <GridView
+        android:id="@+id/gv_e_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_evalution_detial"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:horizontalSpacing="5dip"
+        android:numColumns="3"
+        android:paddingBottom="17dip"
+        android:verticalSpacing="5dip"/>
+
+    <ImageView
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gv_e_gridview"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+
+    <TextView
+        android:id="@+id/tv_evlute_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shadow1"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="1015/2/14" />
+
+    <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/tv_evlute_time"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" /> -->
+
+</RelativeLayout>

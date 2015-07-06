@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="110dip"
+    android:contentDescription="@string/nothing"
+    android:scaleType="fitXY"
+    android:id="@+id/img"
+     >
+</ImageView>
+
+</RelativeLayout>

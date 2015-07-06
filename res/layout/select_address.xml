@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_heavy"
+        android:contentDescription="@string/nothing"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn"
+        android:layout_marginTop="17dip"
+        android:background="@drawable/addaddress_bg"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        />
+    <ListView
+        android:id="@+id/lv_address"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        android:divider="@drawable/address_divider"
+        />
+    </LinearLayout>

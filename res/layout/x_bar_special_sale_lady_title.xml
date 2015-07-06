@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/header_bg" 
+    android:focusable="true" 
+    android:focusableInTouchMode="true">
+    <Button
+        android:id="@+id/btn_scan_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="筛选"
+        android:background="@null"
+        android:textSize="14dp"
+        android:textColor="#d72522"
+        android:focusable="false"
+        android:layout_marginRight="15dip"
+        />
+    <EditText
+        android:id="@+id/et_special_sale_lady_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_toRightOf="@+id/ib_special_sale_lady_return"
+        android:layout_toLeftOf="@id/btn_scan_select"
+		android:background="@drawable/bg_btn_search"
+		android:drawableLeft="@drawable/bg_search_left"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:textSize="14sp"
+        android:paddingLeft="20dip"
+        android:hint="@string/header_hint"
+         />
+
+    <ImageButton
+        android:id="@id/ib_special_sale_lady_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/special_sale_lady_return_background" />
+
+</RelativeLayout>

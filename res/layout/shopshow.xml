@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                  <ListView 
+                     android:id="@+id/lv_newproduct"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     >
+                 </ListView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_shop_return"
+            android:src="@drawable/product_detail_return" />
+
+        <TextView
+            android:id="@+id/tv_shop_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shop_item_search"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:text="搜索店铺内的宝贝"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</FrameLayout>

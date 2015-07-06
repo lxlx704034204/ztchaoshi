@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:orientation="vertical" >
+    <!-- 新增按钮 -->
+    <Button
+        android:id="@+id/newAddress"
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_new_on"
+        android:onClick="onClickNewAddressBtn"
+        android:text="@string/btn_chooseAddress_newAddress"
+        android:textColor="@color/white" />
+    <!-- 地址区域 -->
+    <LinearLayout
+        android:id="@+id/addressArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- 新增地址信息tag -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:background="@color/order_pink"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:text="@string/tv_chooseAddress_banner" />
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/bg_gray" />
+        <!-- 去掉每次进入edittext都获取焦点的效果 -->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:background="@color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- /// 收货姓名,电话填写区域 /// -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <!-- 姓名 -->
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="100dip"
+                    android:layout_height="36dip"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center_vertical"
+                    android:hint="@string/et_choose_name_hint"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+                <!-- 电话 -->
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:gravity="center_vertical"
+                    android:hint="@string/et_choose_phone_hint"
+                    android:inputType="phone"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- /// 省市选择,邮编填写区域 /// -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <!-- 省份选择框 -->
+                <Spinner
+                    android:id="@+id/province"
+                    android:layout_width="80dip"
+                    android:layout_height="36dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/transparent" />
+                <!-- 城市选择框 -->
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="80dip"
+                    android:layout_height="36dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/transparent" />
+                <!-- 收货邮编填写区域 -->
+                <EditText
+                    android:id="@+id/zipCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:hint="@string/et_choose_zcode_hint"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- /// 街道填写区域 /// -->
+            <!-- 街道地址填写 -->
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_choose_streetAddress"
+                android:singleLine="false"
+                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <!-- 添加按钮 -->
+                <Button
+                    android:id="@+id/addAddress"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_new_on"
+                    android:onClick="onClickAddBtn"
+                    android:text="@string/btn_addAddress"
+                    android:textColor="@color/white" />
+                <!-- 设为默认选项 -->
+                <CheckBox
+                    android:id="@+id/def"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginRight="100dip"
+                    android:layout_toLeftOf="@id/addAddress"
+                    android:tag="0"
+                    android:onClick="onCheckDefaultBtn"
+                    android:text="@string/cb_choose_default_hint"
+                    android:textSize="12sp" />
+                <Button
+                    android:id="@+id/updateAddress"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_new_on"
+                    android:onClick="onClickUpdateBtn"
+                    android:text="@string/btn_updateAddress"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/bg_gray" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <com.iteambuysale.zhongtuan.views.MyTextView
+            android:id="@+id/cusname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="17dip"        
+            android:singleLine="true"
+            android:text="lforxeverc" />
+
+        <com.iteambuysale.zhongtuan.views.MyTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cusname"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/cusname"
+             />
+
+        <RatingBar
+            android:id="@+id/ratingbar1"
+            style="@style/EvaluationRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="10dip"
+            android:focusable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.1"
+            android:stepSize="0.1" />
+
+        <com.iteambuysale.zhongtuan.views.MyTextView
+            android:id="@+id/pingjia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cusname"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="17dip"
+            android:paddingBottom="17dip"
+            android:textColor="@color/gray_tg_detail"
+            android:text="好评！！"
+             />
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:visibility="gone"
+            android:numColumns="3"
+            android:verticalSpacing="5dip"
+            android:horizontalSpacing="5dip"
+            android:layout_below="@id/pingjia"
+            android:paddingBottom="17dip"
+            />
+   
+</RelativeLayout>

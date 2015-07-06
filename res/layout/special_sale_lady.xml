@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+   <include layout="@layout/x_bar_title" />
+   <TextView 
+       android:id="@+id/tv_wecanse"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="#ffffff"
+       android:text="女装"
+       android:layout_gravity="left"
+       android:paddingLeft="10dp"
+       android:gravity="center_vertical"
+       android:textColor="#000000"
+       android:textSize="16dp"
+       android:drawableTop="@drawable/lady_special_divider"
+       android:drawableBottom="@drawable/lady_special_divider"/>
+
+   <GridView
+       android:id="@+id/gv_special_sale_catory_load"
+       android:layout_width="match_parent"
+       android:layout_height="310dp"
+       android:layout_marginTop="10dp"
+       android:numColumns="4"
+       android:background="@android:color/white"
+       android:rowCount="3" >
+
+     
+   </GridView>
+
+</LinearLayout>

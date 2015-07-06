@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title" />
+    <!-- password edit -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_right_arrow"
+        android:gravity="left|center_vertical"
+        android:onClick="onClickPassBtn"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/btn_setting_editpass"
+        android:textSize="18sp" />
+    <include layout="@layout/x_widget_line" />
+    <!-- copyright -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_right_arrow"
+        android:gravity="left|center_vertical"
+        android:onClick="onClickCopyrightBtn"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/btn_setting_copyright"
+        android:textSize="18sp" />
+    <include layout="@layout/x_widget_line" />
+    <!-- feedback -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_right_arrow"
+        android:gravity="left|center_vertical"
+        android:onClick="onClickFeedbackBtn"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/btn_setting_feeback"
+        android:textSize="18sp" />
+    <include layout="@layout/x_widget_line" />
+    <!-- check update -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_right_arrow"
+        android:gravity="left|center_vertical"
+        android:onClick="onClickCheckVersionBtn"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/btn_setting_checkversion"
+        android:textSize="18sp" />
+    <include layout="@layout/x_widget_line" />
+    <!-- about us -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_right_arrow"
+        android:gravity="left|center_vertical"
+        android:onClick="onClickAboutUsBtn"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/btn_setting_aboutus"
+        android:textSize="18sp" />
+    <include layout="@layout/x_widget_line" />
+    <!-- quite button -->
+    <Button
+        android:id="@+id/quite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dip"
+        android:background="@drawable/btn_me_quite"
+        android:gravity="center"
+        android:onClick="onClickQuiteBtn"
+        android:text="@string/btn_me_quite"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        <Button
+            android:id="@+id/versionName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:onClick="onClickVersionNameBtn" />
+    </RelativeLayout>
+</LinearLayout>

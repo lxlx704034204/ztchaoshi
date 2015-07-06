@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 信息输入区域 -->
+    <LinearLayout
+        android:id="@+id/inputs_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- 顶部图 -->
+        <ImageView
+            android:id="@+id/topPic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nothing"
+            android:scaleType="fitXY"
+            android:src="@drawable/bar_login" />
+        <include layout="@layout/x_widget_line" />
+        <!-- 用户名（手机号）填写区域 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="37dip" >
+            <!-- 用户名图像 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nothing"
+                android:src="@drawable/bg_name" />
+            <!-- 分割线 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:contentDescription="@string/nothing"
+                android:src="@drawable/bg_seperator" />
+            <!-- 去掉每次进入edittext都获取焦点的效果 -->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+                <requestFocus />
+            </LinearLayout>
+            <!-- 用户名（手机号）输入框 -->
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:digits="1234567890"
+                android:hint="@string/hint_login_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 密码填写区域 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="37dp" >
+            <!-- 密码图像 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nothing"
+                android:src="@drawable/bg_password" />
+            <!-- 分割线 -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:contentDescription="@string/nothing"
+                android:src="@drawable/bg_seperator" />
+            <!-- 密码输入框 -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:hint="@string/hint_login_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+    </LinearLayout>
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="340dip"
+        android:layout_height="44dip"
+        android:layout_below="@id/inputs_area"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dip"
+        android:background="@drawable/btn_login"
+        android:onClick="onClickLoginBtn"
+        android:text="@string/btn_login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/new_user"
+        android:layout_width="97dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="12.5dip"
+        android:background="@drawable/btn_new_on"
+        android:onClick="onClickRegistBtn"
+        android:text="@string/btn_new_user"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <!-- 忘记密码按钮 -->
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="36.5dip"
+        android:clickable="true"
+        android:onClick="onClickForgetPwdBtn"
+        android:text="@string/btn_forget_password"
+        android:textColor="@color/little_grey"
+        android:textSize="16sp" />
+</RelativeLayout>

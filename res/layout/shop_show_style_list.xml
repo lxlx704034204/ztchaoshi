@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_shop_style"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="7dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/zhongtuanimage" />
+       <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="haha"
+            android:id="@+id/iv_shop_style"/> -->
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:textSize="13sp"
+        android:id="@+id/tv_shop_style_title"
+        android:layout_toRightOf="@id/iv_shop_style"
+        android:text="2014秋冬装新款女装韩版通勤斗篷毛呢外套冬季修身中长款"
+        android:lines="2"
+        />
+   <TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="14sp"
+       android:text="￥355"
+       android:layout_marginTop="2dp"
+       android:layout_marginLeft="7dp"
+       android:id="@+id/tv_shop_style_price"
+       android:textColor="@color/default_red"
+       android:layout_toRightOf="@id/iv_shop_style"
+       android:layout_below="@id/tv_shop_style_title"/>
+ <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="销量100"
+     android:textSize="13sp"
+     android:id="@+id/tv_shop_style_num"
+     android:layout_marginTop="2dp"
+     android:layout_marginLeft="7dp"
+     android:textColor="@color/default_grey1"
+     android:layout_toRightOf="@id/iv_shop_style"
+     android:layout_below="@id/tv_shop_style_price"/>
+ <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/default_grey1"
+     android:textSize="13sp"
+     android:text="打造金牌商铺"
+     android:id="@+id/tv_shop_style_name"
+     android:layout_marginTop="2dp"
+     android:layout_marginLeft="7dp"
+     android:layout_toRightOf="@id/iv_shop_style"
+     android:layout_below="@id/tv_shop_style_num"/>
+ <ImageView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/tm_style_search"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="10dp"
+     android:layout_alignBottom="@id/tv_shop_style_name"/>
+</RelativeLayout>

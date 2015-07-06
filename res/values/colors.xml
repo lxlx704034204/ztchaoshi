@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color> <!-- 白色，字体颜色 -->
+    <color name="transparent">#00000000</color> <!-- 透明色 -->
+    <color name="main_background">#ebebeb</color> <!-- 整体的背景色 -->
+    <color name="red">#FF0033</color> <!-- 红色 -->
+    <color name="black_code">#282F35</color> <!-- 字体的颜色 -->
+    <color name="line_bg">#B2B2B2</color> <!-- 分割线的颜色 -->
+    <color name="little_grey">#777777</color> <!-- 忘记密码的颜色 -->
+    <color name="list_grey">#989898</color> <!-- list 界面字体灰色 -->
+    <color name="list_red">#d83635</color> <!-- list 界面字体红色 -->
+    <color name="list_black">#141414</color> <!-- list 界面字体黑色 -->
+    <color name="oringe">#fe5e06</color> <!-- 价格颜色 -->
+    <color name="product_list_gray">#a0a3a0</color> <!-- 列表灰色 -->
+    <color name="product_gray">#e8e8e7</color> <!-- 产品灰色 -->
+    <color name="order_pink">#f5c0c0</color> <!-- 订单红 -->
+    <color name="green">#8dc31c</color>
+    <color name="bg_gray">#eeeeee</color> <!-- 特卖灰 -->
+    <color name="pic_gray">#ebebeb</color> <!-- 图片等待灰 -->
+    <color name="default_gray">#646464</color> <!-- 默认灰色 -->
+    <color name="shop_gray">#828282</color> <!-- 默认灰色 -->
+    <color name="default_red">#d72522</color> <!-- 默认红色 -->
+    <color name="default_black">#333333</color> <!-- 默认黑色 -->
+    <color name="default_grey1">#969696</color> <!-- 默认黑色 -->
+    <color name="header_bg">#F5F5F5</color> <!-- 顶栏白-->
+    <color name="red_zt">#E60014</color> <!-- 中团红 -->
+    <color name="red_alltg_price">#ff4978</color> <!-- 全部团购和团购价格颜色 -->
+    <color name="org_low">#ff6000</color> <!-- 全网底价 -->
+    <color name="red_mj">#f75b5b</color> <!-- 满.减..字体颜色-->
+    <color name="gray_tg_detail">#9b9b9b</color> <!-- 团购商品详情字体-->
+    <color name="green_pay">#66c41f</color>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:background="@drawable/shophead_bg" >
+                <TextView
+                    android:id="@+id/tv_shopnamess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="女装旗舰店"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_shopnamess"
+                    android:layout_alignLeft="@id/tv_shopnamess"
+                    android:text="店铺信息"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"/>
+                <TextView 
+                    android:id="@+id/tv_shop_payattenion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_shopnamess"
+                    android:text="关注"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:paddingLeft="26dp"
+                    android:layout_marginRight="7dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/guanzhu"/>
+                <TextView
+                    android:id="@+id/tv_shop_collection_num" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="275"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@id/tv_shopnamess"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上新宝贝"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+</FrameLayout>

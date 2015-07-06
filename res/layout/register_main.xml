@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title" />
+    <!-- 注册 -->
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <!-- 注册手机号 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 手机号tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_phone"
+                android:textColor="@color/red" />
+            <!-- 去掉每次进入edittext都获取焦点的效果 -->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+                <requestFocus />
+            </LinearLayout>
+            <!-- 手机号填写框 -->
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:digits="0123456789"
+                android:hint="@string/hint_register_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 注册密码区域 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 注册密码tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_password"
+                android:textColor="@color/red" />
+            <!-- 注册密码输入框 -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/hint_register_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 重复密码填写区域 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 重复密码tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_repeat_password"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+            <!-- 重复密码输入框 -->
+            <EditText
+                android:id="@+id/repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/hint_register_repeat_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 下一步按钮 -->
+        <Button
+            android:id="@+id/next"
+            android:layout_width="300dip"
+            android:layout_height="44dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="44dip"
+            android:background="@drawable/btn_register"
+            android:onClick="onClickNextBtn"
+            android:text="@string/btn_next"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- 个人信息设置页 -->
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <!-- 个人昵称 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 昵称tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_nick_name"
+                android:textColor="@color/red" />
+            <!-- 去掉每次进入edittext都获取焦点的效果 -->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+                <requestFocus />
+            </LinearLayout>
+            <!-- 昵称输入框 -->
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="@string/hint_register_nick_name"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 性别 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 性别tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_sex"
+                android:textColor="@color/red" />
+            <!-- 性别select -->
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nothing"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="15dip"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_sex"
+                    android:text="@string/check_register_man"
+                    android:textColor="@color/black_code"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_sex"
+                    android:text="@string/check_register_woman"
+                    android:textColor="@color/black_code"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 生日 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 生日tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_birthday"
+                android:textColor="@color/red" />
+            <!-- 生日显示/点击 -->
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:onClick="onClickBirthdayArea"
+                android:text="@string/hint_register_birthday"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 验证码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <!-- 验证码tag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/tag_register_mobyzm"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+            <!-- 验证码输入框 -->
+            <EditText
+                android:id="@+id/mobyzm"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/hint_register_mobyzm"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black_code"
+                android:textSize="15sp" />
+            <!-- 获取验证码按钮 -->
+            <Button
+                android:id="@+id/get_mobyzm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/btn_new_on"
+                android:onClick="onClickGetYzmBtn"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:text="@string/btn_register_mobyzm"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <include layout="@layout/x_widget_line" />
+        <!-- 注册按钮 -->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="300dip"
+            android:layout_height="44dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="44dip"
+            android:background="@drawable/btn_new_off"
+            android:clickable="false"
+            android:onClick="onClickRegisterBtn"
+            android:text="@string/btn_register"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:background="@drawable/white_border"
+        android:layout_marginBottom="7dp" >
+        <ImageView
+            android:id="@+id/iv_item_imageload"
+            android:layout_width="170dp"
+            android:layout_height="186dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loader_image_befor"
+            android:paddingBottom="1dp"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_imageload"
+            android:layout_alignLeft="@id/iv_item_imageload"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/under_xiushi_huabian" />
+        <TextView
+            android:id="@+id/tv_item_product_title"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:layout_below="@id/iv_item_imageload"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@id/iv_item_imageload"
+            android:layout_alignLeft="@id/iv_item_imageload"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:text="苹果笔记本" />
+        
+        <TextView
+            android:id="@+id/tv_item_product_introduce"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_below="@id/tv_item_product_title"
+            android:layout_alignRight="@id/iv_item_imageload"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/tv_item_product_title"
+            android:text="【中团特卖】只要998，就可以把苹果笔记本带回家，现在打电话订购，还可以获得价值9999元的瑞士手表一块，还在等什么马上订购吧！" />
+        <TextView
+            android:id="@+id/tv_item_nowprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_item_product_introduce"
+            android:layout_below="@id/tv_item_product_introduce"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="3dp"
+            android:text="￥79.9"
+            android:textColor="#eb5f62"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_beforeprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_item_nowprice"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_item_nowprice"
+            android:text="￥159.9"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+        <TextView 
+            android:id="@+id/iv_sendtb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送团币"
+            android:textSize="10sp"
+            android:background="@drawable/tuanbi_bg"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:layout_alignBaseline="@id/tv_item_nowprice"
+            android:layout_alignRight="@id/iv_item_imageload"
+            android:layout_marginRight="7dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

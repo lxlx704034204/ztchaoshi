@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="17dip"
+         android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+         android:background="#FFFFFF"
+         >
+    <ImageView
+        android:id="@+id/iv_event_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="143dip"
+        android:background="#FFFFFF"      
+        android:contentDescription="@string/nothing"
+         />
+     <ImageView
+        android:id="@+id/activity_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_line"
+        android:layout_marginTop="-3dip"
+        android:contentDescription="@string/nothing" />
+    <TextView
+        android:id="@+id/tv_event_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="8dip"
+        android:textColor="@color/default_black"
+        android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

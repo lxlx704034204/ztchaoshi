@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+    <RelativeLayout 
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shopmenu_background">
+        <ImageView 
+            android:id="@+id/left_menu_shopimage"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/zhongtuanimage"
+            />
+        <TextView 
+            android:id="@+id/left_menu_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/left_menu_shopimage"
+            android:layout_marginLeft="20dp"
+            android:text="店铺名称"/>
+        <TextView 
+            android:id="@+id/left_menu_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/left_menu_shopname"
+            android:layout_alignLeft="@id/left_menu_shopname"
+            android:layout_below="@id/left_menu_shopname"
+            android:layout_marginTop="5dp"
+            android:text="收藏数： 100"/>
+         <TextView 
+            android:id="@+id/tv_left_menu_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/left_menu_shopname"
+            android:layout_alignLeft="@id/left_menu_shopname"
+            android:layout_below="@id/left_menu_collect"
+            android:layout_marginTop="1dp"
+            android:text="所在地：广东 深圳"/>
+         <ImageView
+             android:id="@+id/iv_divider"
+             android:layout_width="match_parent"
+             android:layout_height="2dp"
+             android:layout_marginTop="23dp"
+             android:layout_marginLeft="25dp"
+             android:layout_marginRight="25dp"
+             android:background="@android:color/white"
+             android:layout_below="@id/tv_left_menu_shop_address"/>
+         <TextView 
+             android:id="@+id/tv_left_menu_call"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/iv_divider"
+             android:textColor="@color/white"
+             android:layout_alignLeft="@id/iv_divider"
+             android:layout_marginTop="15dp"
+             android:text="联系电话："
+             android:textSize="13sp"/>
+
+          <TextView
+              android:id="@+id/tv_left_call"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@id/tv_left_menu_call"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="30dp"
+              android:layout_toRightOf="@id/tv_left_menu_call"
+              android:background="@drawable/bg_left_call"
+               />
+         
+
+         <TextView 
+             android:id="@+id/tv_left_menu_contect"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="32dp"
+             android:layout_marginBottom="32dp"
+             android:text="联系卖家"
+             android:textColor="@android:color/white"
+             android:background="@drawable/shop_menu_call_bg"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             />
+    </RelativeLayout>
+</FrameLayout>

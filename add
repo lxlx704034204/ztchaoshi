@@ -1,0 +1,26 @@
+
+完成了除了顶部广告的所有功能
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch ycy
+# Changes to be committed:
+#	modified:   AndroidManifest.xml
+#	modified:   res/layout/sale_fragment_v2.xml
+#	new file:   res/layout/tm_adv_show.xml
+#	modified:   src/com/teambuy/zhongtuan/activity/specialsale/LadyCatgory.java
+#	modified:   src/com/teambuy/zhongtuan/activity/specialsale/SearchToList.java
+#	modified:   src/com/teambuy/zhongtuan/activity/specialsale/ShowProductV2.java
+#	modified:   src/com/teambuy/zhongtuan/activity/specialsale/SpecialShop.java
+#	new file:   src/com/teambuy/zhongtuan/activity/specialsale/TMAdvShow.java
+#	modified:   src/com/teambuy/zhongtuan/define/D.java
+#	modified:   src/com/teambuy/zhongtuan/fragment/home/SaleFragmentVersion2.java
+#	modified:   src/com/teambuy/zhongtuan/utilities/DBUtilities.java
+#
+# Changes not staged for commit:
+#	deleted:    src/com/teambuy/zhongtuan/activity/me/OrderActivity.java
+#	deleted:    src/com/teambuy/zhongtuan/activity/me/OrderDetailsActivity.java
+#	deleted:    src/com/teambuy/zhongtuan/actor/me/OrderActor.java
+#	deleted:    src/com/teambuy/zhongtuan/actor/me/OrderDetailsActor.java
+#	deleted:    src/com/teambuy/zhongtuan/fragment/home/ActivitiesFragment.java
+#	deleted:    src/com/teambuy/zhongtuan/views/MyScrollView.java
+#

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_heavy"
+        android:contentDescription="@string/nothing"
+        />
+    <Button
+        android:id="@+id/all_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/lbtn_bg"
+        android:text="@string/btn_near_business_allcategory"
+        android:textColor="@color/default_black"
+        android:textSize="16sp"
+        android:layout_marginTop="10dip"
+        android:onClick="onAllCategoryClick"
+        />
+   
+    
+    
+
+</LinearLayout>

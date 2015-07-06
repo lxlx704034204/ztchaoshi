@@ -1,0 +1,5 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line"
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dip"
+    android:background="@drawable/img_me_header_line" />

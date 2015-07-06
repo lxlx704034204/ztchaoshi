@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dip"
+    android:layout_height="98dip"
+    android:layout_marginTop="4dip"
+    android:background="@drawable/border_product_item"
+    android:orientation="vertical" >
+    <!-- 产品图片 -->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="fill_parent"
+        android:layout_height="66dip"
+        android:contentDescription="@string/nothing"
+        android:scaleType="fitXY" />
+    <!-- 产品名称 -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="16dip"
+        android:background="@color/product_list_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="6dip"
+        android:text="@string/nothing"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <!-- 价格和数量 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="16dip" >
+        <!-- 价格 -->
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="@string/nothing"
+            android:textColor="@color/oringe"
+            android:textSize="12sp" />
+        <!-- 销量 -->
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

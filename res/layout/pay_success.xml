@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background" >
+
+    <include  
+        android:id="@+id/d"
+        layout="@layout/x_bar_title" />
+    <ImageView
+        android:layout_below="@id/d"
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<TextView
+	    android:layout_below="@id/shadow"
+	    android:id="@+id/tv_state"
+	    android:layout_width="wrap_content"
+	    android:layout_height="98dip"
+	    android:gravity="center"
+	    android:layout_centerHorizontal="true"
+	    android:text="购买成功!"
+	    android:textSize="18sp"
+	    android:textColor="@color/default_black"   
+	    />
+	<ImageView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/tv_state"
+	    android:layout_alignBottom="@id/tv_state"
+	    android:layout_marginRight="10dip"
+	    android:src="@drawable/buy_success"
+	    android:contentDescription="@string/nothing"
+	    android:layout_below="@id/shadow"
+	    />
+	<ImageView
+        android:id="@+id/shadow1"
+        android:layout_below="@id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+	<TextView
+	    android:layout_below="@id/shadow1"
+	    android:id="@+id/code_tag"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="13dip"
+	    android:layout_marginLeft="10dip"
+	    android:textSize="14sp"
+	    android:text="消费码："    
+	    />
+	<TextView
+	    android:id="@+id/code"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/code_tag"
+	    android:layout_toRightOf="@id/code_tag"
+	    android:textSize="14sp"  
+	    />
+	<ImageView
+        android:id="@+id/shadow2"
+        android:layout_below="@id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+	<TextView
+	    android:layout_below="@id/shadow2"
+	    android:id="@+id/tel_tag"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="13dip"
+	    android:layout_marginLeft="10dip"
+	    android:textSize="14sp"
+	    android:text="已发送到："    
+	    />
+	<TextView
+	    android:id="@+id/tel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/tel_tag"
+	    android:layout_toRightOf="@id/tel_tag"
+	    android:textSize="14sp" 
+	    />
+	<ImageView
+        android:id="@+id/shadow3"
+        android:layout_below="@id/tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<ImageView
+        android:id="@+id/shadow4"
+        android:layout_below="@id/shadow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<Button
+	    android:layout_below="@id/shadow4"
+	    android:layout_marginTop="17dip"
+	    android:layout_width="wrap_content"
+	    android:layout_marginLeft="10dip"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/btn_buy_continue"
+	    android:background="@drawable/buy_continue"
+	    />
+	<Button
+	    android:layout_marginLeft="20dip"
+	    android:layout_alignBottom="@id/btn_buy_continue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/btn_see_ztq"
+	    android:layout_toRightOf="@id/btn_buy_continue"
+	    android:background="@null"
+	    />
+	<ImageView
+        android:id="@+id/shadow5"
+        android:layout_below="@id/btn_buy_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_marginTop="15dp"
+    android:background="@drawable/red_border2">
+        
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:background="#ff7777"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_quan_type"
+             android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="团券"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+        <TextView 
+            android:id="@+id/tv_quan_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$30.0"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tv_quan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="编号：14258459521"/>
+        <TextView
+            android:id="@+id/tv_min_price" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="所需消费金额：￥100"/>
+        <TextView 
+            android:id="@+id/tv_availabel_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="有效期：2015/6/16至2015/7/18"
+            android:layout_marginBottom="10dp"/>
+       <!--  <TextView
+            android:id="@+id/tv_use_area" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="适用范围:"/> -->
+        
+    </LinearLayout>
+</LinearLayout>

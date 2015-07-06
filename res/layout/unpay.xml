@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/ztq_header"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableBottom="@drawable/ztq"
+            android:gravity="center"
+            android:text="特卖"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableBottom="@drawable/ztq"
+            android:gravity="center"
+            android:text="@string/tg"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+
+        
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@drawable/shadow_heavy" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/delete"
+        android:background="@drawable/delete_bg" />
+
+</LinearLayout>

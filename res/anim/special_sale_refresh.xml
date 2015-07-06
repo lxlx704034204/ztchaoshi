@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<animation-list  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:oneshot="false">  
+    <item android:drawable="@drawable/dog1" android:duration="500"/>  
+    <item android:drawable="@drawable/dog2" android:duration="500"/>
+   <!--  <item android:drawable="@drawable/donman3" android:duration="100"/>  
+    <item android:drawable="@drawable/donman4" android:duration="100"/>  
+    <item android:drawable="@drawable/donman5" android:duration="100"/>  
+    <item android:drawable="@drawable/donman6" android:duration="100"/>  
+    <item android:drawable="@drawable/donman7" android:duration="100"/>  
+    <item android:drawable="@drawable/donman8" android:duration="100"/>  
+    <item android:drawable="@drawable/donman9" android:duration="100"/> -->  
+</animation-list>
