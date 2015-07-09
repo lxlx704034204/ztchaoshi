@@ -56,6 +56,7 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 		setContentView(R.layout.wait_pay_l);
 		mProgressDialog=CustomProgressDialog.createDialog(this);
 		orderStatus= getIntent().getIntExtra("orderStatus", -1);
+		//Toast.makeText(this, orderStatus+"", 0).show();
 		
 		
 		
@@ -108,8 +109,6 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 	private void  loadWaitPayOrder(final String orderStatus){
 		mProgressDialog.show(); 
 		 NetAsync waitpayAsync=new NetAsync(D.API_MY_GETTMORDER,this) {
-			
-
 			@Override
 			public Object processDataInBackground(JsonElement elData) {
 				Type type = new TypeToken<Map<String, OrderTM>>() {
@@ -157,7 +156,6 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 				adapter.notifyDataSetChanged();
 			}
 			break;
-
 		default:
 			break;
 		}
@@ -172,6 +170,7 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 		case D.API_MY_GETTMORDER:
 			orderMap = (Map<String, OrderTM>) data;
 				 adapter = new WaitPayAdapter_l(this, orderMap,this,orderStatus);
+				// Toast.makeText(this, orderStatus+"", 0).show();
 				 lv_order_wait_pay.setAdapter(adapter);
 				break;
 		case D.API_SPECIAL_ORDRSCANCEL:

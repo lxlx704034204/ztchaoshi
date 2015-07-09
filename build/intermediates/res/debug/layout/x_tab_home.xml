@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/iv_home_tab_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="4dip"
+        android:contentDescription="@string/nothing" />
+    <TextView
+        android:id="@+id/tv_home_tab_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:gravity="center"
+        android:textColor="@color/tab_home_font_color" />
+</merge><!-- From: file:/E:/workspance/ztchaoshi/res/layout/x_tab_home.xml -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >
+   <include layout="@layout/x_bar_title" />
+    <ListView
+        android:id="@+id/list"
+        android:background="@drawable/near_background"
+        android:divider="@color/transparent"
+        android:layout_width="fill_parent"
+        android:dividerHeight="10dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/tuangouhui_fregment.xml -->

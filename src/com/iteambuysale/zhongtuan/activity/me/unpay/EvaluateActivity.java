@@ -90,7 +90,6 @@ public class EvaluateActivity extends BaseActivity implements OnClickListener,
 		sumTv.setText(sum);
 		costTv.setText(cost);
 		timeTv.setText(time.substring(0, 11));
-
 	}
 
 	private void initView() {
@@ -175,6 +174,17 @@ public class EvaluateActivity extends BaseActivity implements OnClickListener,
 				mParams.add(new BasicNameValuePair("level", "2"));
 				mParams.add(new BasicNameValuePair("dfen", rating));
 				mParams.add(new BasicNameValuePair("memo", evaluation));
+				mParams.add(new BasicNameValuePair("onox", getIntent().getStringExtra("onox")));
+				/*ordno/订单号
+				shopid/店铺ID
+				cpid/商品ID
+				cpmc/商品名称
+				level/好中差评(2,1,0)
+				dfen/评分
+				memo/评价内容
+				onox/订单明细*/
+
+				
 				// for(int i=0;i<filesName.length;i++){
 				// mParams.add(new BasicNameValuePair("pic"+i,filesName[i]));
 				// }
@@ -261,7 +271,6 @@ public class EvaluateActivity extends BaseActivity implements OnClickListener,
 		mDialog.dismiss();
 		Toast.makeText(this, "成功！", Toast.LENGTH_SHORT).show();
 		finish();
-
 	}
 
 	@Override

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+    
+    <RelativeLayout
+        android:id="@+id/rl_shop_product1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="1dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/white_border" >
+
+        <ImageView
+            android:id="@+id/iv_item_imageload1"
+            android:layout_width="170dp"
+            android:layout_height="188dp"
+            android:paddingTop="1dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loader_image_befor"
+            android:paddingBottom="1dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_imageload1"
+            android:layout_alignLeft="@id/iv_item_imageload1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/under_xiushi_huabian" />
+         <TextView
+            android:id="@+id/tv_item_product_title1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_below="@id/iv_item_imageload1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+             />
+        <TextView
+            android:id="@+id/tv_item_product_introduce1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_below="@id/tv_item_product_title1"
+            android:layout_alignLeft="@id/tv_item_product_title1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="【中团特卖】只要998，就可以把苹果笔记本带回家，现在打电话订购，还可以获得价值9999元的瑞士手表一块，还在等什么马上订购吧！" />
+
+        <TextView
+            android:id="@+id/tv_item_nowprice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_item_product_introduce1"
+            android:layout_below="@id/tv_item_product_introduce1"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="5dp"
+            android:text="￥79.9"
+            android:textColor="#eb5f62"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_beforeprice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_item_nowprice1"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_item_nowprice1"
+            android:text="￥159.9"
+            android:textColor="#9b9b9b"/>
+          <TextView 
+            android:id="@+id/iv_sendtb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送团币"
+            android:textSize="10sp"
+            android:background="@drawable/tuanbi_bg"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:layout_alignBaseline="@id/tv_item_nowprice1"
+            android:layout_alignRight="@id/iv_item_imageload1"
+            android:layout_marginRight="7dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_product2"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_shop_product1"
+        android:paddingBottom="10dp"
+        android:background="@drawable/white_border" >
+
+        <ImageView
+            android:id="@+id/iv_item_imageload2"
+            android:layout_width="170dp"
+            android:layout_height="188dp"
+            android:paddingTop="1dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loader_image_befor"
+            android:paddingBottom="1dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_imageload2"
+            android:layout_alignLeft="@id/iv_item_imageload2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/under_xiushi_huabian" />
+        <TextView
+            android:id="@+id/tv_item_product_title2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_below="@id/iv_item_imageload2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+             />
+        <TextView
+            android:id="@+id/tv_item_product_introduce2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_alignLeft="@id/tv_item_product_title2"
+            android:layout_below="@id/tv_item_product_title2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:text="【中团特卖】只要998，就可以把苹果笔记本带回家，现在打电话订购，还可以获得价值9999元的瑞士手表一块，还在等什么马上订购吧！" />
+
+        <TextView
+            android:id="@+id/tv_item_nowprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_item_product_introduce2"
+            android:layout_below="@id/tv_item_product_introduce2"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="5dp"
+            android:text="￥79.9"
+            android:textColor="#eb5f62"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_beforeprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_item_nowprice2"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_item_nowprice2"
+            android:text="￥159.9"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+         <TextView 
+            android:id="@+id/iv_sendtb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送团币"
+            android:textSize="10sp"
+            android:background="@drawable/tuanbi_bg"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:layout_alignBaseline="@id/tv_item_nowprice2"
+            android:layout_alignRight="@id/iv_item_imageload2"
+            android:layout_marginRight="7dp"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+         <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/near_background"
+            android:layout_alignParentBottom="true"/>
+
+   
+</RelativeLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/sale_atagory_lady_adapterview.xml -->

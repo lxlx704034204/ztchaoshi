@@ -184,11 +184,9 @@ public class MeEvlution extends Activity implements NetAsyncListener,
 		switch (reqUrl) {
 		case D.API_GET_MY_TEMAI_EVALUTE:
 			istemailoading=false;
-			
 			break;
 		case D.API_GET_MY_NEAR_EVALUTE:
 			istuangouloading=false;
-			
 			break;
 
 		default:
@@ -238,7 +236,6 @@ public class MeEvlution extends Activity implements NetAsyncListener,
 			//underline.startAnimation(setAnimation(0, loactions[0], 200));
 			// System.out.println("1from :"+0+",to:"+loactions[0]);
 			cursor = DBUtilities.getrecmByuid(phoneNumber, istemai);
-			
 			adapter.changeCursor(cursor);
 			adapter.notifyDataSetChanged();
 			vp_list.setCurrentItem(1, true);

@@ -8,6 +8,7 @@ import org.apache.http.message.BasicNameValuePair;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import com.google.gson.JsonElement;
 import com.iteambuysale.zhongtuan.R;
 import com.iteambuysale.zhongtuan.activity.BaseActivity;
+import com.iteambuysale.zhongtuan.activity.me.unpay.EvaluateActivity;
 import com.iteambuysale.zhongtuan.background.NetAsync;
 import com.iteambuysale.zhongtuan.define.D;
 import com.iteambuysale.zhongtuan.listener.global.NetAsyncListener;
@@ -33,8 +35,9 @@ public class MeEvalutionBefore_l extends BaseActivity implements OnClickListener
 	private int[] to;
 	private String[] from;
 	private ListView listview;
+	private final int GO_EVALUTE=6;//去评价
 	private final int ENSURE_PACKAGE=9;//确认收货
-	private final int APPLY_REFUND=7;//		申请退货
+	private final int APPLY_REFUND=7;//		申请退款
 	private int fromstatus;
 	private CustomProgressDialog mProgressDialog;
 	@Override
@@ -54,11 +57,11 @@ public class MeEvalutionBefore_l extends BaseActivity implements OnClickListener
 	private void initdata(){
 		CustomProgressDialog.createDialog(this);
 		to = new int[] { R.id.iv_img_one, R.id.tv_product_name,
-				R.id.tv_product_price, R.id.tv_buynums,R.id.tv_me_eval };
-		from = new String[] { "_cppic", "_cpmc", "_oje", "_osl","_ordnox" };
+				R.id.tv_product_price, R.id.tv_buynums,R.id.tv_me_eval ,R.id.tv_me_eval2};
+		from = new String[] { "_cppic", "_cpmc", "_oje", "_osl","_ordnox" ,"_ordzt"};
 		String orderno = getIntent().getStringExtra("orderno");
 		fromstatus = getIntent().getIntExtra("Fromstatus", 0);
-		Cursor cursor = DBUtilities.getcpmx(orderno);
+		Cursor cursor = DBUtilities.getcpmx(orderno+"%");
 		listview.setAdapter(new MyCursorAdapter(this, R.layout.order_detial_adapter_l, cursor, from, to));
 		
 	}
@@ -105,7 +108,11 @@ public class MeEvalutionBefore_l extends BaseActivity implements OnClickListener
 					@Override
 					public void onClick(DialogInterface arg0,
 							int arg1) {
-                      ensureGetGoods(orderno);
+						if(fromstatus==APPLY_REFUND){
+							
+						}else if(fromstatus==ENSURE_PACKAGE){
+							ensureGetGoods(orderno);
+						}
 					}
 				});
 		dialog.setNegativeButton("取消",
@@ -147,7 +154,25 @@ public class MeEvalutionBefore_l extends BaseActivity implements OnClickListener
 			    v.setOnClickListener(new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						ensurePackage(text);
+						if(fromstatus==ENSURE_PACKAGE){
+							ensurePackage(text);
+						}else if(fromstatus==APPLY_REFUND){
+							Toast.makeText(getApplicationContext(), "此功能暂时未完成", 0).show();
+						}else if(fromstatus==GO_EVALUTE){
+						   Toast.makeText(getApplicationContext(), "去评价", 0).show();
+						   Intent intent =new Intent(getApplicationContext(), EvaluateActivity.class);
+						   Cursor cursor = DBUtilities.getcpmx(text);
+						   if(cursor.moveToFirst()){
+						   intent.putExtra("id", getIntent().getStringExtra("orderid"));
+						   intent.putExtra("name", cursor.getString(cursor.getColumnIndex("_cpmc")));
+						   intent.putExtra("picurl", cursor.getString(cursor.getColumnIndex("_cppic")));
+						   intent.putExtra("cost", cursor.getString(cursor.getColumnIndex("_oje")));
+						   intent.putExtra("sum", cursor.getString(cursor.getColumnIndex("_oje")));
+						   intent.putExtra("time", getIntent().getStringExtra("time"));
+						   intent.putExtra("onox", text);
+						   }
+						   startActivity(intent);
+						}
 						
 					}
 				});

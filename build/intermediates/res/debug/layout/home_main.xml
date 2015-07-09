@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:contentDescription="@string/nothing"
+	/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 分割线 -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#eeeeee" />
+
+        <RadioGroup
+            android:id="@+id/rg_home"
+            android:layout_width="fill_parent"
+            android:layout_height="47dip"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical" >
+
+           
+
+            <RadioButton
+                android:id="@+id/sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:paddingTop="8dip"
+                android:paddingBottom="4dip"
+                android:drawableTop="@drawable/tab_bg_sale"
+                android:gravity="center_horizontal"
+                android:onClick="onClickBtnSale"
+                android:text="@string/tab_sale"
+                android:textColor="@color/tab_home_font_color"
+                android:textSize="10sp" />
+             <RadioButton
+                android:id="@+id/near"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:paddingTop="8dip"
+                android:paddingBottom="4dip"
+                android:drawableTop="@drawable/tab_bg_nearby"
+                android:gravity="center_horizontal"
+                android:onClick="onClickBtnNear"
+                android:text="@string/tab_nearby"
+                android:textColor="@color/tab_home_font_color"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dip"
+                android:paddingBottom="4dip"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_bg_activities"
+                android:gravity="center_horizontal"
+                android:onClick="onClickActivities"
+                android:text="@string/tab_activities"
+                android:textColor="@color/tab_home_font_color"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dip"
+                android:paddingBottom="4dip"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_bg_me"
+                android:gravity="center_horizontal"
+                android:onClick="onClickMe"
+                android:text="@string/tab_me"
+                android:textColor="@color/tab_home_font_color"
+                android:textSize="10sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/home_main.xml -->

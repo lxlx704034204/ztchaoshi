@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:background="#eeeeee" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"  
+   android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/advice_tag"
+                android:textColor="@color/default_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dip"
+                android:layout_marginTop="12dip"
+                android:text="@string/advice_tag1"
+                android:textColor="@color/default_black"
+                android:visibility="gone"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dip"
+                android:layout_marginRight="37dip"
+                android:layout_marginTop="12dip"
+                android:hint="标题"
+                android:textColor="#636363"
+                android:visibility="gone"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dip"
+                android:layout_marginTop="12dip"
+                android:text="@string/advice_tag2"
+                android:visibility="gone"
+                android:textColor="@color/default_black"
+                android:textSize="17sp" />
+
+            <com.iteambuysale.zhongtuan.views.EditTextWithBorder
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="250dip"
+                android:layout_marginLeft="37dip"
+                android:layout_marginRight="37dip"
+                android:layout_marginTop="12dip"
+                android:background="@color/white"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="5dip"
+                android:textColor="#636363"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_post_advice"
+                android:onClick="onClickPostBtn"
+                android:text="@string/btn_feedback"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dip"              
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/me_feedback.xml -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#e5e7eb">
+    <include layout="@layout/order_detial_title"
+        android:id="@+id/order_title"/>
+   <!--  -->
+    <ListView 
+        android:id="@+id/lv_order_detial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_below="@id/order_title"
+        >
+    </ListView>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_border">
+        <Button 
+            android:id="@+id/bt_go_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:background="@color/default_red"/>
+        <Button 
+            android:id="@+id/bt_concel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="取消订单"
+            android:background="#fca611"
+            android:padding="7dp"
+            android:layout_toLeftOf="@id/bt_go_pay"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/order_detial_l.xml -->

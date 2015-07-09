@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/near_background">
+    <include layout="@layout/x_bar_title"/>
+  
+       <com.iteambuysale.zhongtuan.views.RefreshListView 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/near_background"
+           android:layout_marginBottom="1dp"
+           android:listSelector="@android:color/transparent"
+           android:id="@+id/lv_goodmsg">
+       </com.iteambuysale.zhongtuan.views.RefreshListView>
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/wait_goods.xml -->

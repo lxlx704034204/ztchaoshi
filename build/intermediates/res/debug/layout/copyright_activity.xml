@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title"/>
+ <TextView 
+     android:background="@color/white"
+     android:layout_marginTop="10dip"
+     android:paddingLeft="17dip"
+     android:id="@+id/title1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#323232"
+     android:textSize="17sp"
+     android:paddingTop="10dip"
+     android:paddingBottom="10dip"
+     android:text="@string/statement"
+     />
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:src="@drawable/shadow_heavy"
+     android:contentDescription="@string/nothing"
+     />
+ <TextView
+     android:background="@color/white"
+     android:id="@+id/copyright"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#656565"
+     android:textSize="12sp"
+     android:paddingTop="10dip"
+     android:paddingBottom="10dip"
+     android:paddingLeft="37dip"
+     android:paddingRight="37dip"
+     android:text="@string/copyrights"
+     android:lineSpacingExtra="10dip"
+     />
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:src="@drawable/shadow_heavy"
+     android:contentDescription="@string/nothing"
+     />
+ <TextView 
+     android:background="@color/white"
+     android:layout_marginTop="10dip"
+     android:paddingLeft="17dip"
+     android:id="@+id/title2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#323232"
+     android:textSize="17sp"
+     android:paddingTop="10dip"
+     android:paddingBottom="10dip"
+     android:text="@string/contacts"
+     />
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:src="@drawable/shadow_heavy"
+     android:contentDescription="@string/nothing"
+     />
+ 
+ <TextView
+     android:background="@color/white"
+     android:id="@+id/copyright1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#656565"
+     android:textSize="12sp"
+     android:paddingTop="10dip"
+     android:paddingBottom="10dip"
+     android:paddingLeft="37dip"
+     android:paddingRight="37dip"
+     android:text="@string/contacts_1"
+     android:lineSpacingExtra="10dip"
+     />
+ 
+
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/copyright_activity.xml -->

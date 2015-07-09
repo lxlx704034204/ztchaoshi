@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colorlist.xml -->
+    <eat-comment/>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="bgColor">#FFF2F2F2</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="bg_gray">#eeeeee</color>
+    <color name="black_code">#282F35</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colorlist.xml -->
+    <eat-comment/>
+    <color name="btnColor">#FFFFFF</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="default_black">#333333</color>
+    <color name="default_gray">#646464</color>
+    <color name="default_grey1">#969696</color>
+    <color name="default_red">#d72522</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colorlist.xml -->
+    <eat-comment/>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+    <color name="downLoadBackFocus">#FF6698E7</color>
+    <color name="downLoadBackNomal">#FFFFFFFF</color>
+    <color name="downLoadBackPressed">#FF3366CC</color>
+    <color name="downLoadTextNomal">#FF3366CC</color>
+    <color name="downLoadTextPressed">#FFFFFFFF</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="gray_tg_detail">#9b9b9b</color>
+    <color name="green">#8dc31c</color>
+    <color name="green_pay">#66c41f</color>
+    <color name="header_bg">#F5F5F5</color>
+    <color name="line_bg">#B2B2B2</color>
+    <color name="list_black">#141414</color>
+    <color name="list_grey">#989898</color>
+    <color name="list_red">#d83635</color>
+    <color name="little_grey">#777777</color>
+    <color name="main_background">#ebebeb</color>
+    <color name="order_pink">#f5c0c0</color>
+    <color name="org_low">#ff6000</color>
+    <color name="oringe">#fe5e06</color>
+    <color name="pic_gray">#ebebeb</color>
+    <color name="product_gray">#e8e8e7</color>
+    <color name="product_list_gray">#a0a3a0</color>
+    <color name="red">#FF0033</color>
+    <color name="red_alltg_price">#ff4978</color>
+    <color name="red_mj">#f75b5b</color>
+    <color name="red_zt">#E60014</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colorlist.xml -->
+    <eat-comment/>
+    <color name="secondbtntextColor">#FF496ea3</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="shop_gray">#828282</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colorlist.xml -->
+    <eat-comment/>
+    <color name="textColorforCheckBox">#FF333333</color>
+    <color name="textColorforItemTitle">#FF666666</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="product_obj" type="id"/>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Sale_searh_hint">搜索特卖商品</string>
+    <string name="activity_sale">活动优惠</string>
+    <string name="address">地址</string>
+    <string name="address_detail">详细地址：</string>
+    <string name="ads">广告</string>
+    <string name="advice_tag">请您反馈对中团的意见和建议</string>
+    <string name="advice_tag1">标题：</string>
+    <string name="advice_tag2">内容：</string>
+    <string name="album">从相册选择</string>
+    <string name="all">总价</string>
+    <string name="all_cities">所有城市</string>
+    <string name="allcost">总价：</string>
+    <string name="allmoney">总计:</string>
+    <string name="allsum">数量：</string>
+    <string name="app_name">中团超市</string>
+    <string name="back"> 返回</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="bluetooth">蓝牙</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="brand">参与品牌</string>
+    <string name="btn_activities_car">汽车</string>
+    <string name="btn_activities_education">教育</string>
+    <string name="btn_activities_furniture">家居</string>
+    <string name="btn_activities_house">房产</string>
+    <string name="btn_activities_party">聚会</string>
+    <string name="btn_activities_tbh">团博会</string>
+    <string name="btn_activities_wedding">结婚</string>
+    <string name="btn_activities_xq">相亲</string>
+    <string name="btn_addAddress">添加</string>
+    <string name="btn_all_tg">全部团购</string>
+    <string name="btn_baby">母婴</string>
+    <string name="btn_business">商家</string>
+    <string name="btn_business_buynow">立即抢购</string>
+    <string name="btn_cancel_order">取消订单</string>
+    <string name="btn_chooseAddress">选择地址</string>
+    <string name="btn_chooseAddress_newAddress">新增地址</string>
+    <string name="btn_comment">发表</string>
+    <string name="btn_company_company_tag">查看加盟商铺</string>
+    <string name="btn_digital">数码</string>
+    <string name="btn_editpass_post">提交</string>
+    <string name="btn_entertainment">娱乐</string>
+    <string name="btn_feedback">提交</string>
+    <string name="btn_food">美食</string>
+    <string name="btn_food_tm">食品</string>
+    <string name="btn_forget_password">忘记密码？</string>
+    <string name="btn_hotel">酒店</string>
+    <string name="btn_info_complete">完成</string>
+    <string name="btn_lady">女装</string>
+    <string name="btn_login">登 录</string>
+    <string name="btn_makeup">美妆</string>
+    <string name="btn_man">男装</string>
+    <string name="btn_me_address">我的地址</string>
+    <string name="btn_me_advice">我的建议</string>
+    <string name="btn_me_collect">我的收藏</string>
+    <string name="btn_me_event">我的报名</string>
+    <string name="btn_me_history">浏览历史</string>
+    <string name="btn_me_order">我的订单</string>
+    <string name="btn_me_quite">退出登录</string>
+    <string name="btn_me_shared">我的分享</string>
+    <string name="btn_more">更多分类</string>
+    <string name="btn_more_tm">更多分类</string>
+    <string name="btn_movie">电影</string>
+    <string name="btn_near_business_allcategory">全部分类</string>
+    <string name="btn_near_business_person_sum">用餐人数</string>
+    <string name="btn_near_business_smartsort">智能排序</string>
+    <string name="btn_near_business_wholecity">全城</string>
+    <string name="btn_new_user">新用户</string>
+    <string name="btn_newd">新单</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_order">继续支付</string>
+    <string name="btn_order_post">提交</string>
+    <string name="btn_packet">箱包</string>
+    <string name="btn_product_list">查看更多商品</string>
+    <string name="btn_product_order">下定单</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_register_mobyzm">点击获取验证码</string>
+    <string name="btn_setting_aboutus">关于我们</string>
+    <string name="btn_setting_checkversion">检查版本更新</string>
+    <string name="btn_setting_copyright">版权声明</string>
+    <string name="btn_setting_editpass">修改密码</string>
+    <string name="btn_setting_feeback">意见反馈</string>
+    <string name="btn_store_company_tag">公司详情</string>
+    <string name="btn_travel">旅游</string>
+    <string name="btn_updateAddress">修改地址</string>
+    <string name="button">我要报名</string>
+    <string name="c1">预约不上</string>
+    <string name="c2">去过了，不太满意</string>
+    <string name="c3">朋友/网上评价不好</string>
+    <string name="c4">买多了/买错了</string>
+    <string name="c5">计划有变，没时间消费</string>
+    <string name="c6">后悔了不想要了</string>
+    <string name="c7">商家说可以直接以团购价到店消费</string>
+    <string name="c8">其他</string>
+    <string name="camera">拍照</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="cancel">取消</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cancel1">取消</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cash">现金:</string>
+    <string name="cb_choose_default_hint">设为默认地址</string>
+    <string name="check_register_man">男</string>
+    <string name="check_register_woman">女</string>
+    <string name="choose_city">选择城市：</string>
+    <string name="choose_district">选择县/区：</string>
+    <string name="choose_province">选择省份：</string>
+    <string name="city1">北京市</string>
+    <string name="city2">上海市</string>
+    <string name="city3">深圳市</string>
+    <string name="city4">兰州市</string>
+    <string name="city5">杭州市</string>
+    <string name="city6">武汉市</string>
+    <string name="city7">西安市</string>
+    <string name="city8">南京市</string>
+    <string name="ckqbtg">查看全部团购</string>
+    <string name="company">公司</string>
+    <string name="confirm_title">提示</string>
+    <string name="consume">消费码：</string>
+    <string name="contacts">联系方式：</string>
+    <string name="contacts_1">深圳中团科技有限公司\n电话：020-85584512\n传真：020-85584512\n电子邮箱：568984480@qq.com\n网址：www.ztchaoshi.com</string>
+    <string name="content_description_icon">icon</string>
+    <string name="copyrights">中团超市APP是由深圳中团科技有限公司开发出来的一款F2F手机购物APP，所有解析权归本公司所有</string>
+    <string name="default_city">广州市</string>
+    <string name="delete">删除</string>
+    <string name="dg">蛋糕</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="douban">豆瓣</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="down">展开</string>
+    <string name="download">下载</string>
+    <string name="download_fail">下载安装包失败</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="dropbox">Dropbox</string>
+    <string name="email">邮件</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="endtime">有限期至:</string>
+    <string name="ensure">确定</string>
+    <string name="entertainment">休闲娱乐</string>
+    <string name="et_category_search">搜索</string>
+    <string name="et_choose_name_hint">姓名</string>
+    <string name="et_choose_phone_hint">手机</string>
+    <string name="et_choose_zcode_hint">邮编</string>
+    <string name="etc">....</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="evernote">印象笔记</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="fen">分数：</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="finish">完成</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="five">5</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="flickr">Flickr</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="food">餐饮美食</string>
+    <string name="forget_password">忘记总有时，万一真的没有后悔药？</string>
+    <string name="forhelpus">为了帮助我们做得更好，请提交退款原因（至少选一项）</string>
+    <string name="four">4</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="foursquare">FourSquare</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="get_time">收货时间：</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="googleplus">Google+</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="guess_u_like">猜你喜欢</string>
+    <string name="haveget">已收货</string>
+    <string name="hdyc">横店影城</string>
+    <string name="header_hint">输入商家、分类或商圈</string>
+    <string name="hg">火锅</string>
+    <string name="hint">请输入退款的原因，最多不超过200字</string>
+    <string name="hint_choose_streetAddress">请在此填写你的详细地址</string>
+    <string name="hint_comment">请输入评价</string>
+    <string name="hint_editpass_newpass">请输入新密码</string>
+    <string name="hint_editpass_repeatpass">请再次输入新密码</string>
+    <string name="hint_editpass_yzm">验证码：</string>
+    <string name="hint_login_password">请输入密码</string>
+    <string name="hint_login_phone">请输入手机号码</string>
+    <string name="hint_register_birthday">点击输入生日</string>
+    <string name="hint_register_mobyzm">请输入6位验证码</string>
+    <string name="hint_register_nick_name">请输入昵称</string>
+    <string name="hint_register_password">请输入密码</string>
+    <string name="hint_register_phone">请输入手机号码</string>
+    <string name="hint_register_repeat_password">请再次输入密码</string>
+    <string name="hint_search">搜索商家、分类、地点</string>
+    <string name="hot_city">热门城市</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string name="instapaper">Instapaper</string>
+    <string name="instapaper_email">邮箱</string>
+    <string name="instapaper_login">登录</string>
+    <string name="instapaper_logining">登录中…</string>
+    <string name="instapaper_pwd">密码</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="jbxx">基本信息</string>
+    <string name="jd">酒店</string>
+    <string name="jtzndzfzh">将退至您的支付账号</string>
+    <string name="jyyc">金逸影城</string>
+    <string name="k">待定</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="kaixin">开心网</string>
+    <string name="kakaostory">KakaoStory</string>
+    <string name="kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="kakaotalk">KakaoTalk</string>
+    <string name="kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="lifeservice">生活服务</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="line">Line</string>
+    <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="linkedin">领英</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="list_friends">%s的朋友</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="local_city">GPS定位到的城市</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="mingdao">明道</string>
+    <string name="mingdao_share_content">网页分享</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mobile">手机号码</string>
+    <string name="money">￥</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="multi_share">图文分享</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="my_evlution">我的评价</string>
+    <string name="name">姓名</string>
+    <string name="name_1">收货人姓名：</string>
+    <string name="need">购买意向</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="neteasemicroblog">网易微博</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="next">下一步</string>
+    <string name="nothing" ns1:ignore="MissingTranslation"/>
+    <string name="one">1</string>
+    <string name="orderdetail">订单明细</string>
+    <string name="ordno">订单编号</string>
+    <string name="payed">已支付</string>
+    <string name="paytime">付款时间</string>
+    <string name="person">人</string>
+    <string name="person_sum">本次活动已报名人数:</string>
+    <string name="phone">电话号码：</string>
+    <string name="phone_num">手机号码：</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="pinterest">Pinterest</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="please">请输入您的手机号码</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="pocket">Pocket</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="processing">加载中</string>
+    <string name="product_sale">特价产品</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="qq">QQ</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="qzone">QQ空间</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="rb_good">好</string>
+    <string name="rb_history">退款</string>
+    <string name="rb_mid">中</string>
+    <string name="rb_nocomment">已收货</string>
+    <string name="rb_nopay">待支付</string>
+    <string name="rb_payed">待收货</string>
+    <string name="rb_worse">差</string>
+    <string name="rbll">日本料理</string>
+    <string name="rbtn_unused">未使用</string>
+    <string name="rbtn_used">已使用</string>
+    <string name="redo">重试</string>
+    <string name="refresh">刷新</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="refreshing">刷新中…</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="refunddetail">退款内容</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="release_to_refresh">松开刷新</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="renren">人人网</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="search_hint">请输入城市中文名称</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="select_a_friend">请选择一个朋友</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="select_city_header">选择城市</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="shake2share">摇晃手机！</string>
+    <string name="share">分享</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_to">分享到</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="share_to_mingdao">分享到明道</string>
+    <string name="share_to_qq">分享到QQ</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_qzone_default">来自%s的分享</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/oks_strings.xml -->
+    <eat-comment/>
+    <string name="sharing">分享操作正在后台进行…</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="shopping">居家购物</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="shortmessage">信息</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="sptc">商品套餐</string>
+    <string name="state">订单状态</string>
+    <string name="statement">有关中团超市的版权声明：</string>
+    <string name="submit">立即提交</string>
+    <string name="suggest">超值推荐</string>
+    <string name="sum">数量</string>
+    <string name="t1">请输入姓名</string>
+    <string name="t2">请输入性别</string>
+    <string name="t3">请输入电话</string>
+    <string name="t4">请输入地址</string>
+    <string name="t5">备注：购买意向</string>
+    <string name="tab_activities">购物车</string>
+    <string name="tab_me">我的</string>
+    <string name="tab_nearby">店铺</string>
+    <string name="tab_sale">首页</string>
+    <string name="tab_store">商家</string>
+    <string name="tab_teambuy">团购</string>
+    <string name="tag_buyer">收货人：</string>
+    <string name="tag_buyerMsg">买家信息</string>
+    <string name="tag_buyer_address">收货地址:</string>
+    <string name="tag_buyer_id">帐号:</string>
+    <string name="tag_buyer_phone">电话：</string>
+    <string name="tag_createTime">创建时间:</string>
+    <string name="tag_currentStatus">当前状态：</string>
+    <string name="tag_echangeMethod">交易方式：</string>
+    <string name="tag_level">等级：</string>
+    <string name="tag_ordermsg">订单信息</string>
+    <string name="tag_ordernum">订单号:</string>
+    <string name="tag_payMethod">支付方式:</string>
+    <string name="tag_register_birthday">出生日期：</string>
+    <string name="tag_register_mobyzm">验证码</string>
+    <string name="tag_register_nick_name">昵称：</string>
+    <string name="tag_register_password">密        码：</string>
+    <string name="tag_register_phone">手        机：</string>
+    <string name="tag_register_repeat_password">重复密码：</string>
+    <string name="tag_register_sex">性别：</string>
+    <string name="tag_sellerMsg">卖家信息</string>
+    <string name="tag_seller_address">店铺地址：</string>
+    <string name="tag_seller_name">姓名：</string>
+    <string name="tag_seller_phone">电话：</string>
+    <string name="tel">电话</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="tencentweibo">腾讯微博</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="test">abalabalabalabhfjajfojaoijfaiojoijfiejoijofjaijfjoiajoifjejf</string>
+    <string name="tg">团购</string>
+    <string name="three">3</string>
+    <string name="time_sum">距离本次活动时间:</string>
+    <string name="time_yxq">有效期：</string>
+    <string name="tip">请输入完整信息</string>
+    <string name="tittle">免费报名</string>
+    <string name="tkyy">退款原因</string>
+    <string name="transportation">交通线路</string>
+    <string name="tuanbohui">团博会</string>
+    <string name="tuangouhui">团购会</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="tumblr">Tumblr</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="tv_chooseAddress_banner">新增地址信息</string>
+    <string name="tv_choose_address_city">市:</string>
+    <string name="tv_choose_address_province">省:</string>
+    <string name="tv_choose_address_street">街道地址:</string>
+    <string name="tv_choose_item_address">地址</string>
+    <string name="tv_choose_item_name">名字</string>
+    <string name="tv_choose_item_phone">电话</string>
+    <string name="tv_company_description">介绍内容巴拉比例巴拉娜拉卡拉亚拉卡拉来来来娜拉</string>
+    <string name="tv_company_description_tag">介绍:</string>
+    <string name="tv_company_location">黄浦达到西中山999号</string>
+    <string name="tv_company_location_tag">公司地址</string>
+    <string name="tv_company_name">方太厨电石牌</string>
+    <string name="tv_company_phone">13172929299</string>
+    <string name="tv_company_phone_tag">电话</string>
+    <string name="tv_me_birthday_tag">出生日期</string>
+    <string name="tv_me_default_o">0</string>
+    <string name="tv_me_editpass_tag">修改密码</string>
+    <string name="tv_me_email_tag">邮箱</string>
+    <string name="tv_me_id_tag">帐号</string>
+    <string name="tv_me_mycoloection">我的收藏</string>
+    <string name="tv_me_name">名称</string>
+    <string name="tv_me_name_tag">	昵称</string>
+    <string name="tv_me_rest_tittle">账户余额：</string>
+    <string name="tv_me_sex_tag">性别</string>
+    <string name="tv_me_yuan">元</string>
+    <string name="tv_me_ztq">优惠券</string>
+    <string name="tv_order_address">点击添加</string>
+    <string name="tv_order_address_name_phone">暂无收货信息</string>
+    <string name="tv_order_address_tag">收货地址</string>
+    <string name="tv_order_count">共1件</string>
+    <string name="tv_order_description">暂无描述</string>
+    <string name="tv_order_ex_price_tag">交易金额</string>
+    <string name="tv_order_info_tag">收货信息</string>
+    <string name="tv_order_pay_road">支付方式</string>
+    <string name="tv_order_price_info_tag">结算信息</string>
+    <string name="tv_order_total_price_tag">总金额</string>
+    <string name="tv_order_weixin">微信</string>
+    <string name="tv_order_yinlian">银联</string>
+    <string name="tv_order_zhifubao">支付宝</string>
+    <string name="tv_product_info_tag">商品信息</string>
+    <string name="tv_product_price_market_tag">市场价：</string>
+    <string name="tv_product_store_info_tag">商家信息</string>
+    <string name="tv_signate">个性签名</string>
+    <string name="tv_store_description_tag">介绍:</string>
+    <string name="tv_store_location_tag">商铺地址</string>
+    <string name="tv_store_phone_tag">电话</string>
+    <string name="tv_store_priceAvg_tag">人均：</string>
+    <string name="tv_yuanjia">原价</string>
+    <string name="tv_zf1">支付宝支付</string>
+    <string name="tv_zf1_hint">推荐有支付宝账户的用户使用</string>
+    <string name="tv_zf2">银联支付</string>
+    <string name="tv_zf2_hint">各大银行无卡支付、快捷支付</string>
+    <string name="tv_zf3">微信支付</string>
+    <string name="tv_zf3_hint">推荐安装微信5.0以上版本的使用</string>
+    <string name="tv_zffs">选择支付方式</string>
+    <string name="tv_zfje">支付金额</string>
+    <string name="tv_ztq">中团券密码：</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="twitter">Twitter</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="two">2</string>
+    <string name="unget">待收货</string>
+    <string name="up">收起</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="use_login_button">请改用“登录”按钮</string>
+    <string name="vkontakte">VK</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="wxfsbt">未消费，随便退</string>
+    <string name="xckc">小吃快餐</string>
+    <string name="xfy">小肥羊</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="yixin">易信</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="youdao">有道云笔记</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="zgf">真功夫</string>
+    <!-- From: file:/E:/workspance/ztchaoshi/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="EvaluationRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_pj</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item>
+    </style>
+    <style name="LadyPage_grid_style">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">103dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:background">@drawable/special_sale_button_background</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+   <item name="android:button">@drawable/tuanbi_button_use</item>
+   <item name="android:minWidth">80dp</item>
+ </style>
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_drawable</item>
+        <item name="android:minHeight">17dip</item>
+        <item name="android:maxHeight">17dip</item>
+    </style>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="tv_list_zhongTuan" parent="@android:style/Widget.TextView">
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">1dip</item>
+    </style>
+    <style name="webViewProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/webview_progressbar</item>
+    </style>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/near_background">
+
+    <!-- 标题bar -->
+
+    <include layout="@layout/x_bar_title" />
+    <RadioGroup
+        android:id="@+id/rg_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/ztq_header"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/rb_rbtn1_ev"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="特卖"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_rbtn2_ev"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tg"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/iv_underline_red" 
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="@color/default_red"/>
+    <!-- 地址选项列表 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_evalute_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp">
+    </android.support.v4.view.ViewPager>
+   <!--  <ListView
+        android:id="@+id/my_evalute_List"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:dividerHeight="7dp"
+        android:divider="@color/transparent" >
+    </ListView> -->
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/my_evalute_all.xml -->

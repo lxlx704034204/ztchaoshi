@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+    <TextView 
+        android:layout_marginTop="17dip"
+        android:id="@+id/category_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:drawablePadding="10dip"
+        android:textColor="@color/red_alltg_price"
+        android:textSize="14sp" />
+  <ImageView
+        android:id="@+id/iv_tag"
+        android:src="@drawable/tv_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/category_tag"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/nothing"
+        
+        /> 
+ </RelativeLayout> 
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/copy_of_more_category_item.xml -->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="@drawable/near_background">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/x_bar_title" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_heavy"
+        android:contentDescription="@string/nothing"
+        />
+
+    <com.iteambuysale.zhongtuan.views.CategorysView
+        android:id="@+id/cateview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.iteambuysale.zhongtuan.views.RefreshListView
+        android:id="@+id/list_near_business_product"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2.0"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:divider="@drawable/lv_devider"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="32dip"
+        >
+   <Button
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/default_black"
+        android:background="@color/transparent"
+        android:textSize="12sp" />
+   <ImageView
+       android:contentDescription="@string/nothing"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/iv"
+       android:layout_centerVertical="true"
+       android:src="@drawable/btn_category_refresh"
+       android:layout_alignParentRight="true"
+       android:paddingRight="10dip"
+       android:paddingLeft="10dip"
+       />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/copy_of_near_business_header.xml -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title" />
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="fill_parent"
+        android:layout_height="12dip"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/webview_progressbar" />
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:text="@string/button"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:layout_margin="5dip"
+        android:onClick="onbuttonclick"
+        />
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/x_block_webview.xml -->

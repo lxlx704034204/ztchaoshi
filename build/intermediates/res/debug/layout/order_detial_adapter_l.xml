@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+   
+
+                <ImageView
+                    android:id="@+id/iv_img_one"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:lines="2"
+                        android:text="【亮银首饰】观音本命年酒红石榴石手链女式首饰品水晶多层圈韩版名族风手串"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_product_name"
+                        android:layout_below="@id/tv_product_name"
+                        android:layout_marginTop="10dp"
+                        android:text="￥0"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_buynums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_product_price"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="X0"
+                        android:textSize="11dp" />
+                    <TextView 
+                        android:id="@+id/tv_me_eval"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价"
+                        android:padding="6dp"
+                        android:background="@color/default_red"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tv_buynums"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        />
+                    <TextView 
+                        android:id="@+id/tv_me_eval2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:background="@color/default_red"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tv_buynums"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        />
+                </RelativeLayout>
+
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/order_detial_adapter_l.xml -->

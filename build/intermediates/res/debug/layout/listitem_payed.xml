@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+     >
+    <ImageView
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light"
+        android:layout_marginTop="9dip"
+        />
+    
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="130dip"
+        android:layout_height="82dip"
+        android:contentDescription="@string/nothing"
+        android:layout_below="@id/shadow2"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/checkbox"
+        />
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_alignTop="@id/pic"
+        android:layout_marginLeft="17dip" 
+        android:layout_toRightOf="@id/pic"   
+        android:singleLine="true"
+        android:textColor="@color/default_black"   
+        />
+    <TextView
+        android:id="@+id/tv_price_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@id/tv_tittle"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="17dip" 
+        android:layout_toRightOf="@id/pic" 
+        android:text="@string/allcost" 
+        android:textColor="@color/gray_tg_detail"  
+        />
+    
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/tv_price_tag" 
+        android:layout_alignBottom="@id/tv_price_tag"  
+        android:textColor="@color/gray_tg_detail"   
+        />
+    <TextView
+        android:id="@+id/tv_sum_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@id/tv_tittle"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="17dip" 
+        android:layout_toRightOf="@id/tv_price" 
+        android:text="@string/allsum" 
+        android:textColor="@color/gray_tg_detail"  
+        />
+    
+    <TextView
+        android:id="@+id/tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/tv_sum_tag" 
+        android:layout_alignBottom="@id/tv_sum_tag"  
+        android:textColor="@color/gray_tg_detail"   
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="20141108"
+        android:layout_alignLeft="@id/tv_price_tag"
+        android:layout_alignBottom="@id/pic"
+        android:textColor="@color/gray_tg_detail" 
+        />
+    
+    <Button
+        android:id="@+id/tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/pic" 
+        android:focusable="true"
+        android:textSize="14sp"
+        android:padding="5dip"
+        android:clickable="false"
+        android:layout_marginRight="10dip"  
+        android:focusableInTouchMode="true"
+        />
+    
+    <ImageView
+        android:id="@+id/shadow3"
+        android:layout_below="@id/pic"
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/in"
+        android:layout_marginRight="10dip"
+        android:contentDescription="@string/nothing"
+        android:layout_centerVertical="true"
+        />
+    
+    
+    
+
+</RelativeLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/listitem_payed.xml -->

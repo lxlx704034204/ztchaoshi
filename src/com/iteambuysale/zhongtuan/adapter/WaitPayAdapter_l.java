@@ -47,6 +47,7 @@ public class WaitPayAdapter_l extends BaseAdapter{
 	private final int SALE_AFTER=3;
 	private final int ALL_ORDER=4;
 	private final int ENSURE_PACKAGE=9;
+	private final int GO_EVALUTE=6;
 
 	public WaitPayAdapter_l(Context context, Map<String, OrderTM> orderMap,OderDeleteListener listener,int orderstatus) {
 		this.context = context;
@@ -112,7 +113,9 @@ public class WaitPayAdapter_l extends BaseAdapter{
 		}
 
 		final Map.Entry<String, OrderTM> entry = (java.util.Map.Entry<String, OrderTM>) getItem(position);
-		if (orderstatus!=WAIT_EVAL&&entry.getValue().getCpmx().length > 1) {
+		//System.out.println("订单号："+entry.getValue().getOrdno()+","+entry.getValue().getCpmx().length+",");
+		if (entry.getValue().getCpmx().length > 1) {
+			
 			holder.ll_only_one_show.setVisibility(View.GONE);
 			holder.ll_img_album.setVisibility(View.VISIBLE);
 			showSumOrder(holder,entry.getValue().getCpmx());
@@ -232,13 +235,15 @@ public class WaitPayAdapter_l extends BaseAdapter{
 					}
 				}else if(orderstatus==WAIT_EVAL){
 					Intent intent =new Intent(context, MeEvalutionBefore_l.class);
-					entry.getValue().getOrdno();
 				/*	OrderDetailsTM[] cpmx = entry.getValue().getCpmx();
 					CharSequence [] orderChildren=new CharSequence[cpmx.length];
 				    for(int i=0;i<cpmx.length;i++){
 				    	orderChildren[i]=cpmx[i].getOrdnox();
 				    }*/
 				    intent.putExtra("orderno", entry.getValue().getOrdno());
+				    intent.putExtra("Fromstatus",GO_EVALUTE );
+				    intent.putExtra("time", entry.getValue().getDateandtime());
+				    intent.putExtra("orderid", entry.getValue().getCoid());
 					context.startActivity(intent);
 				}else if(orderstatus==SALE_AFTER){
 				  Toast.makeText(context , "售后服务功能暂时未完成，尽请期待", 0).show();

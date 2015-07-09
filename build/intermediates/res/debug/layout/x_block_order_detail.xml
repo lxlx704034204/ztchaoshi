@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 订单号 -->
+    <TextView
+        android:id="@+id/orderNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/test"
+        android:textColor="@color/list_grey"
+        android:textStyle="bold" />
+    <!-- 订单信息 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+        <!-- 产品图 -->
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="68dip"
+            android:layout_height="68dip"
+            android:contentDescription="@string/nothing" />
+        <!-- XO酱蒸米粉 -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/pic"
+            android:text="@string/test"
+            android:textSize="18sp" />
+        <!-- 价格 -->
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/pic"
+            android:text="@string/test"
+            android:textColor="@color/oringe" />
+        <!-- 数量 -->
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/pic"
+            android:text="@string/test"
+            android:textColor="@color/list_grey" />
+    </RelativeLayout>
+    <!-- 分割线 -->
+    <include layout="@layout/x_widget_line" />
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/x_block_order_detail.xml -->

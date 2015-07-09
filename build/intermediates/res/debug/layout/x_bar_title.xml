@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/header_bg" >
+     <Button
+       android:id="@+id/back"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_centerVertical="true"
+       android:layout_alignParentLeft="true"
+       android:background="@null"       
+       />
+   <TextView
+       android:id="@+id/tv_header_tittle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:textSize="16sp"
+       android:textColor="@color/default_red"
+       android:textStyle="bold"    
+       />
+   <Button
+       android:id="@+id/setting"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="10dip"
+       android:textColor="@color/default_red"
+       android:background="@color/transparent"
+       />
+   <ImageView android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_alignParentBottom="true"
+       android:background="#eaeaea"/>
+
+</RelativeLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/x_bar_title.xml -->

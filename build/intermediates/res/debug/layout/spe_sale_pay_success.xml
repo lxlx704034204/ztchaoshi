@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <include  
+        android:id="@+id/d"
+        layout="@layout/x_bar_title" />
+    <ImageView
+        android:layout_below="@id/d"
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<TextView
+	    android:layout_below="@id/shadow"
+	    android:id="@+id/tv_state"
+	    android:layout_width="wrap_content"
+	    android:layout_height="98dip"
+	    android:gravity="center"
+	    android:layout_centerHorizontal="true"
+	    android:text="购买成功!"
+	     android:layout_gravity="center_horizontal"
+	    android:drawableLeft="@drawable/buy_success"
+	    android:textSize="18sp"
+	    android:textColor="@color/default_black"   
+	    />
+	
+	<ImageView
+        android:id="@+id/shadow1"
+        android:layout_below="@id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+       
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+	
+	<ImageView
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+	
+	<ImageView
+        android:id="@+id/shadow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<ImageView
+        android:id="@+id/shadow4"
+        android:layout_below="@id/shadow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+	<Button
+	    android:layout_below="@id/shadow4"
+	    android:layout_marginTop="17dip"
+	    android:layout_width="wrap_content"
+	    android:layout_marginLeft="10dip"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:id="@+id/btn_buy_continue"
+	    android:background="@drawable/buy_continue"
+	    />
+	
+	<ImageView
+        android:id="@+id/shadow5"
+        android:layout_below="@id/btn_buy_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/spe_sale_pay_success.xml -->

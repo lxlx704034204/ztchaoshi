@@ -64,7 +64,18 @@
                         android:layout_below="@+id/tv_buynums"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="25dp"
-                      
+                        />
+                    <TextView 
+                        android:id="@+id/tv_me_eval2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:background="@color/default_red"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/tv_buynums"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
                         />
                 </RelativeLayout>
 

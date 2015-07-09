@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dip" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/shadow_light"
+            android:contentDescription="@string/nothing" /> 
+
+        <TextView
+            android:id="@+id/tv_storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:textColor="@color/default_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_storedistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dip"
+            android:textColor="@color/default_grey1"
+            android:textSize="12sp" />
+
+<!--         <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_storename"
+            android:layout_below="@id/tv_storename"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="7dip"
+            android:focusable="false"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:visibility="gone" /> -->
+         <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shadow_light"
+             />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:divider="#cccccc" />
+ 	<TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:fadingEdge="none"
+            android:shadowRadius="0"
+            android:shadowColor="#ffffffff"
+            android:background="@drawable/shadow_light"/> 
+
+    <Button
+        android:id="@+id/btn_more_tg"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:drawableRight="@drawable/btn_seeall_tg"
+        android:focusable="false"
+        android:paddingRight="10dip"
+        android:paddingLeft="10dip"
+        android:textColor="@color/red_alltg_price"
+        android:drawableBottom="@drawable/shadow_heavy"
+        android:textSize="14sp" />
+   
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/copy_of_listitem_nearbusiness.xml -->

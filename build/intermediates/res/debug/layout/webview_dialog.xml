@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dip"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    
+    android:orientation="vertical" >
+    <TextView
+        android:text="@string/tittle"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:padding="5dip"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:text="@string/tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:id="@+id/cusname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        
+ 
+        />
+    <EditText
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:id="@+id/tel"
+        android:layout_width="fill_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="@string/tel"
+        
+        
+        />
+    <EditText
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:id="@+id/cusaddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        
+        />
+    <EditText
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:id="@+id/need"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/need"
+        
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:background="#cccccc"
+        android:enabled="true"
+        
+        android:layout_marginBottom="20dip"
+        />
+    
+    
+
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/webview_dialog.xml -->

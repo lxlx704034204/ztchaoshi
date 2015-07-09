@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <AutoCompleteTextView
+                android:id="@+id/city_search_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:hint="@string/search_hint"
+                android:textSize="16sp"               
+                 />
+
+            <TextView
+                android:id="@+id/localtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_search_edittext"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/local_city" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/localtext"
+                android:layout_marginLeft="2dip"
+                android:layout_toRightOf="@id/localtext"
+                android:contentDescription="@string/nothing"
+                android:src="@drawable/local" />
+
+            <TextView
+                android:id="@+id/city_local"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/localtext"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#FFFFFF"
+                android:paddingLeft="2dip"
+                android:textColor="@color/default_red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hot_cities"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_local"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/hot_city" />
+
+            <LinearLayout
+                android:id="@+id/hot1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hot_cities"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:id="@+id/city1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city1"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city2"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city3"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city4"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hot1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:id="@+id/city5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city5"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city6"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city7"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/city8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/city_background"
+                    android:onClick="onCityClick"
+                    android:padding="10dip"
+                    android:text="@string/city8"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/all_cities"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hot2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:layout_marginRight="10dip"
+                android:text="@string/all_cities" />
+
+            <ListView
+                android:id="@+id/city_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_cities"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#FFFFFF"
+                android:divider="@drawable/shadow_light"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/city_select.xml -->

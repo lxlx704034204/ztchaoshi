@@ -20,7 +20,7 @@ public class ShopMsg extends Model {
 	@Column(name = "_city", len = 20)			
 	private String city; 
 	
-	@Column(name = "_clb", len = 20)			
+	@Column(name = "_clb", len = 20)		
 	private String clb; 
 	
 	@Column(name = "_collects", len = 20)			

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\workspance\ztchaoshi\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3b20dc871d179ba476082efe543dc1b38db46e30">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\android-support-v4-263d835b54bc5c498cfdcbafb918eb0a5472f47a.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\core-3.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\core-3.1.0-f9cce12737d5391d3fde6355b86095c336d3d8db.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-Wechat-Core-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="152797473d23c4d98066f0d341d18f992f75098a">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.5.4-29541e29619ede3ca78cd90f9af8872df36f8ef9.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\mid-sdk-2.10.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5b8c105b39a07ec1c2ca81919d64eac5482dca87">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\mid-sdk-2.10-27e137b92a005f96bb64d766ab6f0a8286006261.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ef29ec238e1bad6c47297595fada8d7a7d794ff0">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\libammsdk-4fcc4c1fb59dc9f9be4cdfe2ed58c0e031d9190a.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\BaiduLBS_Android.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="49a46f1bc033d78211b6a1377b8e1ff6720cff14">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\BaiduLBS_Android-b3f0b4f48ec11e1e0ea105d2e93e3205a443cba2.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-QQ-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d73975558112ed2a419b7b1e522ca51e05b900ef">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.5.4-655c5b5ebc6adae425577c724bd895d43d5b4b83.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\libpingpp.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1407ac32b80612fc01b7be3ef691faec5b6ecf29">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\libpingpp-12f9b645c1fbe908aedf5aebdbc86a6a72640bcc.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-Wechat-Favorite-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="73eb43947f4dcce4f0252487c555da32906282d1">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Favorite-2.5.4-b4d745fac08949ea21d6b2293ae4f2477bdfa189.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\GetuiSdk2.4.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3a3e0bf969a49b89907d3c57bf9729684f5c0b33">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\GetuiSdk2.4.1.0-d6b87671d3bd37af5c78288f6a307cda0ffe8345.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\mta-sdk-2.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ac2f559577819fe0901398ead81216df54b0a783">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\mta-sdk-2.0.0-68951608f5ebe3caa6dd205a4421196c05961b01.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\gson-2.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\gson-2.3-a133c6fadb9fcbb156e11beb4e1fe4a1b8e1622c.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\alipaysecsdk.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7413c074c9edf523050267b93d0875151dc4b644">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\alipaysecsdk-e702d32513b011f8c30a519a0bf37394d9f28f58.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\UPPayAssistEx.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="794cdc7e62ed3e9f73afd5d9abb97fa30f07ccc9">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\UPPayAssistEx-b3b4cf1c8f17e7d9d0b1ae4a013f48022c177153.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-Wechat-Moments-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d6099d9ae9f26a9f11485f92698689554871651f">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.5.4-6d563ccdefcd93c3da5e76401ec85d2ac43cbf57.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\alipaysdk.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="33d3102886e819ec70b32dd243a2b4d181ac7089">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\alipaysdk-ede99d8b44618b28a609d533f67642f7d798c541.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\GetuiExt-2.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7825bfa9135d693e2046eab96fd94e724e0f9eda">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\GetuiExt-2.0.3-d18b6e5b36e52a0546c8ba7fe3989bcef3f07cc8.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-QZone-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f5b64253601e578a21ca30e7d70a62832b159f87">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.5.4-65f3db31fa66c33f14f4218bc25b9813b726635f.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-SinaWeibo-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e9156ea1cce8f9aaa90bec37bcf6a343c78e6607">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-SinaWeibo-2.5.4-70ff7eeaf949f0322f1216dcad1cf0e8a279fe46.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-TencentWeibo-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a1bbb1e1bbf545c96b750954b9c3bbb35056184b">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-TencentWeibo-2.5.4-6f089825d3bc0e962950343758332588ba26269d.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\mframework.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="25509058b34a5ee08dbf66e57078e3083735d200">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\mframework-696dad7e6c83732bb2e5981861a61762a7eb0229.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-Wechat-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="99de311e1d526380356fce09f91d9252a38b078c">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.5.4-95fc00380a2c326f29b3315abce2a3fa03c284e3.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-Core-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="74e0af86c3bb20aab1417e8346d7b1d56e3d7ac7">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.5.4-c035fca3b0c330859f20cb6b15f778d09423fe40.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\ShareSDK-ShortMessage-2.5.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="faddd22e9253b365789a62f905255bd543991777">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\ShareSDK-ShortMessage-2.5.4-4f0b8470a77494a1566dd11330bf80728f4cc67f.jar" />
+    </item>
+    <item
+        jar="E:\workspance\ztchaoshi\libs\alipayutdid.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="E:\workspance\ztchaoshi\build\intermediates\pre-dexed\debug\alipayutdid-ca639a8c008a8372ad7ab8b4aebc676c675903df.jar" />
+    </item>
+
+</items>

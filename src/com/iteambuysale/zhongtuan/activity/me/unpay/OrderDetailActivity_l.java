@@ -50,6 +50,8 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 	private final int PAYED=1;
 	private final int WAIT_EVAL=2;
 	private final int SALE_AFTER=3;
+	private final int GO_EVALUTE=6;
+	
 	private Button bt_go_pay;
 	private Button bt_concel_order;
 	private String logistics;
@@ -73,7 +75,7 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 		logistics = getIntent().getStringExtra("logistics");
 		orderstatus=getIntent().getIntExtra("orderstatus", -1);
 		Cursor cursor = DBUtilities.getOrderByoderNumber(orderno);
-		Cursor cr = DBUtilities.getcpmx(orderno);
+		Cursor cr = DBUtilities.getcpmx(orderno+"%");
 		lv_order_detial.setAdapter(new MyCursorAdapter(this,
 				R.layout.order_detial_adapter_l, cr, from, to));
 		String ordStatus = "0";
@@ -234,7 +236,7 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 		case R.id.iv_finish:
 			finish();
 			break;
-		case R.id.bt_concel_order:
+		case R.id.bt_concel_order://左边的按钮
 			if (orderstatus==UN_PAY) {
 				
 				netdeleteOrder(orderno);
@@ -252,7 +254,7 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 				Toast.makeText(this, "售后功能暂时未完成", 0).show();
 			}
 			break;
-		case R.id.bt_go_pay:
+		case R.id.bt_go_pay://右边的按钮
 			if(orderstatus==UN_PAY){
 			Intent intent =new Intent(this, Paymoney.class);
 			intent.putExtra("cpje", ordje);
@@ -265,6 +267,11 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 				startActivity(intent);
 			}else if(orderstatus==SALE_AFTER){
 				Toast.makeText(this, "售后服务暂时未完成", 0).show();
+			}else if(orderstatus==WAIT_EVAL){
+				Intent intent=new Intent(this ,MeEvalutionBefore_l.class);
+				intent.putExtra("orderno", orderno);
+				intent.putExtra("Fromstatus", GO_EVALUTE);
+				startActivity(intent);
 			}
 			break;
 			

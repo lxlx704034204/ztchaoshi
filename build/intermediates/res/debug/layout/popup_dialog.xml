@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#b0000000" >
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_light"
+        android:contentDescription="@string/nothing"
+        />
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/white"  
+        android:text="@string/camera"   
+        android:textColor="@color/default_black"
+        android:textSize="16sp"   
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_light"
+        android:contentDescription="@string/nothing"
+        />
+    <Button
+        android:id="@+id/albumBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/white"  
+        android:text="@string/album" 
+        android:textColor="@color/default_black"
+        android:textSize="16sp"       
+        />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_light"
+        android:contentDescription="@string/nothing"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_light"
+        android:contentDescription="@string/nothing"
+        android:layout_marginTop="10dip"
+        />
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/white"  
+        android:text="@string/cancel1" 
+        android:textColor="@color/default_black"
+        android:textSize="16sp"       
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_light"
+        android:contentDescription="@string/nothing"
+        />
+    
+
+</LinearLayout>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/popup_dialog.xml -->

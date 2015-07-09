@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearby_tab"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <com.iteambuysale.zhongtuan.views.RefreshListView
+        android:id="@+id/nearContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#eeeeee"
+        android:scrollbars="none"
+        android:dividerHeight="0.5dip" />
+
+</LinearLayout><!-- From: file:/E:/workspance/ztchaoshi/res/layout/f_near_main.xml -->

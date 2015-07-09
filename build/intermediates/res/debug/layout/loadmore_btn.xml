@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loadMoreBtn"
+    android:gravity="center"
+    android:text="点击加载更多"
+    android:background="@color/red_alltg_price"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:padding="10dip"
+     >
+    
+
+</Button>
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/loadmore_btn.xml -->

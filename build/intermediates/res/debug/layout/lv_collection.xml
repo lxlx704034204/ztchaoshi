@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy"
+        />
+     <RadioGroup
+        android:id="@+id/radiogroup_a"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/ztq_header"
+        android:orientation="horizontal" >
+
+        
+
+        <RadioButton
+            android:id="@+id/rb_temai"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="特卖"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+        <RadioButton
+            android:id="@+id/rb_tuangou"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tg"
+            android:textColor="@color/tab_activities_font_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+    <ImageView 
+        android:id="@+id/underline"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/default_red"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vp_collect">
+    </android.support.v4.view.ViewPager>
+   <!--  <com.teambuy.zhongtuan.views.RefreshListView
+        android:id="@+id/lv_collection_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/shadow_light"
+        />-->
+    </LinearLayout> 
+<!-- From: file:/E:/workspance/ztchaoshi/res/layout/lv_collection.xml -->

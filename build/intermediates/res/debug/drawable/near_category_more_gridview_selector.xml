@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@color/transparent"></item>
+    <item android:state_focused="true" android:drawable="@color/transparent"></item>
+    <item android:state_pressed="true" android:drawable="@color/transparent"></item>
+</selector><!-- From: file:/E:/workspance/ztchaoshi/res/drawable/near_category_more_gridview_selector.xml -->

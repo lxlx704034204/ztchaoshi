@@ -376,7 +376,7 @@ public class DBUtilities {
 	 */
 	public static Cursor  getcpmx(String orderno){
 		SQLiteDatabase db =mInstance.getRDB();
-	    return db.rawQuery("select * from ORDER_DETAILS_TM where _ordnox like ? order by _id desc", new String[]{orderno+"%"});
+	    return db.rawQuery("select * from ORDER_DETAILS_TM where _ordnox like ? order by _id desc", new String[]{orderno});
 	
 	} 
 	
