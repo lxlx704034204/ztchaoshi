@@ -32,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:divider="@drawable/shadow_light"
+                    android:visibility="gone"
                     android:layout_marginTop="12dip"
                     />
 
@@ -46,11 +47,12 @@
 
                 <TextView
                     android:id="@+id/refund_detail"
-                    android:layout_width="wrap_content"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/shadow1"
                     android:layout_marginLeft="10dip"
                     android:layout_marginTop="12dip"
+                    android:lines="3"
                     android:text="@string/refunddetail"
                     android:textColor="@color/default_black"
                     android:textSize="14sp" />

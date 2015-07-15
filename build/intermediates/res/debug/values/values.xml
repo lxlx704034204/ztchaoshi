@@ -16,6 +16,7 @@
     <color name="btnColor">#FFFFFF</color>
     <!-- From: file:/E:/workspance/ztchaoshi/res/values/colors.xml -->
     <eat-comment/>
+    <color name="category_bg">#e5e6eb</color>
     <color name="default_black">#333333</color>
     <color name="default_gray">#646464</color>
     <color name="default_grey1">#969696</color>
@@ -178,6 +179,7 @@
     <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
     <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
     <string name="cash">现金:</string>
+    <string name="category">分类</string>
     <string name="cb_choose_default_hint">设为默认地址</string>
     <string name="check_register_man">男</string>
     <string name="check_register_woman">女</string>
@@ -264,6 +266,7 @@
     <string name="haveget">已收货</string>
     <string name="hdyc">横店影城</string>
     <string name="header_hint">输入商家、分类或商圈</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hg">火锅</string>
     <string name="hint">请输入退款的原因，最多不超过200字</string>
     <string name="hint_choose_streetAddress">请在此填写你的详细地址</string>

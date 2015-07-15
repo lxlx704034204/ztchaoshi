@@ -132,11 +132,7 @@ public class EvaluateActivity extends BaseActivity implements OnClickListener,
 		rating = ratingbar.getRating() + "";
 		if (!evaluation.equals("") && !rating.equals("")) {
 			// commit();
-			if (currentstate == 1) {
 				commitWithPics(D.API_SPECIAL_ORDER_ORDERCCOM);
-			} else {
-				commitWithPics(D.API_CPORD_ORDRECCOM);
-			}
 		} else {
 			Toast.makeText(this, "你还没有评论或评价！", Toast.LENGTH_SHORT).show();
 		}

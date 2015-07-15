@@ -38,7 +38,6 @@ public class SuperActor implements ListAdapter {
 		mContext = context;
 		mActivity = (Activity) context;
 	}
-
 	/**
 	 * 设置当前view的上下文环境
 	 * @param v
@@ -244,7 +243,6 @@ public class SuperActor implements ListAdapter {
 	/* =============================== list Adapter ========================== */
 	@Override
 	public void registerDataSetObserver(DataSetObserver observer) {
-
 	}
 
 	@Override

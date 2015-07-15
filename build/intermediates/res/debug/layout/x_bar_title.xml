@@ -30,7 +30,8 @@
        android:textColor="@color/default_red"
        android:background="@color/transparent"
        />
-   <ImageView android:layout_width="match_parent"
+   <ImageView
+       android:layout_width="match_parent"
        android:layout_height="1dp"
        android:layout_alignParentBottom="true"
        android:background="#eaeaea"/>

@@ -2,6 +2,7 @@ package com.iteambuysale.zhongtuan.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -46,6 +47,7 @@ public class HomeActivity extends SuperActivity implements HomeListener,OnLocati
 		super.onCreate(savedInstanceState, true);
 		setContentView(R.layout.home_main);
 		FragmentManager fm = getSupportFragmentManager();
+
 		//推送
 		PushManager.getInstance().initialize(this.getApplicationContext());
 		mActor = new HomeActor(this);

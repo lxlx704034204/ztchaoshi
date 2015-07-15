@@ -127,7 +127,7 @@ public class ShopFragment extends Fragment implements NetAsyncListener,
 		switch (reqUrl) {
 		case D.API_SPECIAL_GET_ALL_SHOP:
 			footerView.setPadding(0, -footerheight, 0, 0);
-			Toast.makeText(getActivity(), errMsg, 0).show();
+			Toast.makeText(getActivity(), errMsg+"", 0).show();
 
 			break;
 

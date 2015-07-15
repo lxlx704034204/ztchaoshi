@@ -30,5 +30,6 @@
     <color name="red_mj">#f75b5b</color> <!-- 满.减..字体颜色-->
     <color name="gray_tg_detail">#9b9b9b</color> <!-- 团购商品详情字体-->
     <color name="green_pay">#66c41f</color>
+    <color name="category_bg">#e5e6eb</color>
 
 </resources>

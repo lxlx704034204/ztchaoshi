@@ -50,7 +50,9 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 	private final int PAYED=1;
 	private final int WAIT_EVAL=2;
 	private final int SALE_AFTER=3;
+	/*=========================================*/
 	private final int GO_EVALUTE=6;
+	private final int CHECKED_LOGISTIC=10;
 	
 	private Button bt_go_pay;
 	private Button bt_concel_order;
@@ -241,13 +243,22 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 				
 				netdeleteOrder(orderno);
 			}else if(orderstatus==PAYED){//查看物流
-				String url = "http://app.teambuy.com.cn/webc/m/tmlog/id/"
+				/*String url = "http://app.teambuy.com.cn/webc/m/tmlog/id/"
 						+ logistics;
 				Uri uri = Uri.parse(url);
 				Intent intent = new Intent();
 				intent.setAction("android.intent.action.VIEW");
 				intent.setData(uri);
+				startActivity(intent);*/
+				//loadordermx( orderno);
+				Intent intent =new Intent(this,MeEvalutionBefore_l.class);
+				intent.putExtra("orderno",orderno);
+				intent.putExtra("orderstatus",PAYED);
+				intent.putExtra("Fromstatus",CHECKED_LOGISTIC);
 				startActivity(intent);
+				/*orderno = getIntent().getStringExtra("orderno");
+				orderstatus = getIntent().getIntExtra("orderstatus", -1);//intent.putExtra("orderstatus",orderstatus);
+				fromstatus = getIntent().getIntExtra("Fromstatus", 0);*/
 			}else if(orderstatus==WAIT_EVAL){
 				
 			}else if(orderstatus==SALE_AFTER){
@@ -280,6 +291,9 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 		}
 		
 	}
+
+
+
 	private void netdeleteOrder( final String orderno){
 		mProgressDialog.show();
 		   NetAsync deleteTask = new NetAsync(D.API_SPECIAL_ORDRSCANCEL, this) {
@@ -316,6 +330,8 @@ public class OrderDetailActivity_l extends BaseActivity implements OnClickListen
 			Toast.makeText(this, "订单已取消", 0).show();
 			finish();
 			break;
+			case D.API_MY_TMORDERMX:
+				break;
 		default:
 			break;
 		}

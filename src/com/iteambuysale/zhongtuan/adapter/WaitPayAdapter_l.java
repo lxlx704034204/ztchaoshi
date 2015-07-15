@@ -41,13 +41,14 @@ public class WaitPayAdapter_l extends BaseAdapter{
 	private Map<String, OrderTM> orderMap;
 	OderDeleteListener listener;
 	private int orderstatus;
-	private final int UN_PAY=0;
-	private final int PAYED=1;
-	private final int WAIT_EVAL=2;
-	private final int SALE_AFTER=3;
-	private final int ALL_ORDER=4;
-	private final int ENSURE_PACKAGE=9;
-	private final int GO_EVALUTE=6;
+	private final int UN_PAY=0;//待支付
+	private final int PAYED=1;//已支付，代发货
+	private final int WAIT_EVAL=2;//待评价
+	private final int SALE_AFTER=3;//售后
+	private final int ALL_ORDER=4;//所有的订单
+	private final int ENSURE_PACKAGE=9;//确认收货
+	private final int GO_EVALUTE=6;//去评价
+	private static final int CHECKED_LOGISTIC = 10;//查看物流
 
 	public WaitPayAdapter_l(Context context, Map<String, OrderTM> orderMap,OderDeleteListener listener,int orderstatus) {
 		this.context = context;
@@ -205,12 +206,17 @@ public class WaitPayAdapter_l extends BaseAdapter{
 				intent.putExtra("ordno", entry.getValue().getOrdno());
 				context.startActivity(intent);
 				}else if(orderstatus==PAYED){
-					String url = "http://app.teambuy.com.cn/webc/m/tmlog/id/"
+					/*String url = "http://app.teambuy.com.cn/webc/m/tmlog/id/"
 							+ entry.getValue().getLogid();
 					Uri uri = Uri.parse(url);
 					Intent intent = new Intent();
 					intent.setAction("android.intent.action.VIEW");
 					intent.setData(uri);
+					context.startActivity(intent);*/
+					Intent intent =new Intent(context,MeEvalutionBefore_l.class);
+					intent.putExtra("orderno",entry.getValue().getOrdno());
+					intent.putExtra("orderstatus",PAYED);
+					intent.putExtra("Fromstatus",CHECKED_LOGISTIC);
 					context.startActivity(intent);
 				}
 				
@@ -228,9 +234,10 @@ public class WaitPayAdapter_l extends BaseAdapter{
 						Intent intent =new Intent(context,MeEvalutionBefore_l.class);
 						intent.putExtra("orderno", entry.getValue().getOrdno());
 						intent.putExtra("Fromstatus", ENSURE_PACKAGE);
+						intent.putExtra("orderstatus",orderstatus);
 						context.startActivity(intent);
 					}else{
-						ensurePackage(entry.getValue().getOrdno());
+						ensurePackage(entry.getValue().getOrdno(),entry.getValue().getCpmx()[0].getOrdnox());
 						
 					}
 				}else if(orderstatus==WAIT_EVAL){
@@ -244,6 +251,7 @@ public class WaitPayAdapter_l extends BaseAdapter{
 				    intent.putExtra("Fromstatus",GO_EVALUTE );
 				    intent.putExtra("time", entry.getValue().getDateandtime());
 				    intent.putExtra("orderid", entry.getValue().getCoid());
+					intent.putExtra("orderstatus",orderstatus);
 					context.startActivity(intent);
 				}else if(orderstatus==SALE_AFTER){
 				  Toast.makeText(context , "售后服务功能暂时未完成，尽请期待", 0).show();
@@ -279,7 +287,7 @@ public class WaitPayAdapter_l extends BaseAdapter{
 		return convertView;
 	}
 
-	protected void ensurePackage(final String orderno) {
+	protected void ensurePackage(final String orderno, final String ordernox) {
 		AlertDialog.Builder dialog = new AlertDialog.Builder(
 				context);
 		dialog.setTitle("提示");
@@ -290,7 +298,7 @@ public class WaitPayAdapter_l extends BaseAdapter{
 					@Override
 					public void onClick(DialogInterface arg0,
 							int arg1) {
-						listener.ensureorder(orderno);
+						listener.ensureorder(orderno,ordernox);
 
 					}
 				});

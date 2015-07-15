@@ -302,7 +302,6 @@ public class UnpayActivity extends BaseActivity implements OnClickListener,
 		mProgressDialog.dismiss();
 		switch (reqUrl) {
 		case D.API_MY_GETTGORDER:
-			
 			setListView(activityTag);
 			tgFirstTime = false;
 			break;

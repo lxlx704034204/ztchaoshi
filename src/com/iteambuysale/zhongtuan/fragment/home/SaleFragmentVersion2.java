@@ -440,6 +440,9 @@ public class SaleFragmentVersion2 extends Fragment implements
 	private void addAdvertisments(Cursor cur) {
 		adsLists.clear();
 		while (cur.moveToNext()) {
+			if(getActivity()==null){
+				return;
+			}
 			ImageView img = new ImageView(getActivity());
 			img.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
 					LayoutParams.WRAP_CONTENT));

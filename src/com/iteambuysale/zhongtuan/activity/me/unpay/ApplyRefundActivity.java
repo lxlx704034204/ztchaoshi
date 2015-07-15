@@ -42,7 +42,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 	CheckBox c1, c2, c3, c4, c5, c6, c7, c8;
 	Button back, applyBtn;
 	EditText suggest;
-	String ordno, ordid;
+	String ordno;//ordid;
 	float price = 0, per_price = 0;
 	ListView listView;
 	SQLiteDatabase db;
@@ -55,6 +55,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 	private String productName;
 	private TextView refund_detail;
 	private Cursor cursor;
+	private String onox;
 
 	@Override
 	protected void onDestroy() {
@@ -70,6 +71,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 		Intent inetent = getIntent();
 		currentstate = inetent.getIntExtra("currentstate", -1);//0为团购，1为特卖
 		ordno = inetent.getStringExtra("ordno");
+		onox =inetent.getStringExtra("onox");
 		sum = inetent.getStringExtra("sum");
 		productName = inetent.getStringExtra("productName");
 		String cost=inetent.getStringExtra("cost");
@@ -77,7 +79,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 			cost="0.0";
 		}
 		per_price = Float.parseFloat(cost);
-		ordid = inetent.getStringExtra("id");// "ORDER_LIST"中的_id
+		//ordid = inetent.getStringExtra("id");// "ORDER_LIST"中的_id
 		listView = (ListView) findViewById(R.id.lv_ztq);
 		tittle = (TextView) findViewById(R.id.tv_header_tittle);
 		refundTv = (TextView) findViewById(R.id.refund_money);
@@ -100,7 +102,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 		float sumprice = per_price * Integer.parseInt(sum);
 		refundTv.setText(sumprice + "");
 		cashTv.setText(sumprice + "");
-		refund_detail.setText("退款内容：" + productName);
+		refund_detail.setText("退款内容：\n" + productName);
 		back.setBackgroundResource(R.drawable.header_back);
 		back.setOnClickListener(this);
 		applyBtn.setOnClickListener(this);
@@ -151,11 +153,11 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 			break;
 
 		case R.id.applybtn:
-			if (currentstate == 1) {
+			//if (currentstate == 1) {
 				SpecialSaleOrderback(D.API_SPECIAL_ORDREFUND);
-			} else {
-				packetMsgAndApply(D.API_CPORD_ORDER_REFUND);
-			}
+		//	} else {
+				//packetMsgAndApply(D.API_CPORD_ORDER_REFUND);
+			//}
            
 			break;
 		}
@@ -169,6 +171,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 		mDialog = CustomProgressDialog.createDialog(this);
 		mDialog.show();
 		NetAsync refundTask = new NetAsync(url, this) {
+
 			@Override
 			public Object processDataInBackground(JsonElement elData) {
 				return elData;
@@ -178,6 +181,7 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 			public void beforeRequestInBackground(List<NameValuePair> params) {
 				params.add(new BasicNameValuePair("ordno", ordno));
 				params.add(new BasicNameValuePair("mess", reasonMsg));
+				params.add(new BasicNameValuePair("onox", onox));
 
 			}
 		};
@@ -185,12 +189,12 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 
 	}
 
-	private void packetMsgAndApply(String url) {
+	/*private void SpecialSaleOrderback(String url) {
 		reasonMsg = new String();
 		qidMsg = new String();
 		addMsgFromEdt();
 		if (msgList.isEmpty() || qidList.isEmpty()) {
-			Toast.makeText(this, "亲，您还没选退款券号或退款原因！", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "亲，您还没填写退款原因！", Toast.LENGTH_SHORT).show();
 			return;
 		}
 		for (String temp : msgList) {
@@ -212,14 +216,14 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 			@Override
 			public void beforeRequestInBackground(List<NameValuePair> params) {
 				params.add(new BasicNameValuePair("ordno", ordno));
-				params.add(new BasicNameValuePair("qid", qidMsg));
 				params.add(new BasicNameValuePair("mess", reasonMsg));
+				params.add(new BasicNameValuePair("onox", onox));
 
 			}
 		};
 		refundTask.execute();
 
-	}
+	}*/
 
 	private void addMsgFromEdt() {
 		String edtMsg = suggest.getText().toString();
@@ -331,7 +335,6 @@ public class ApplyRefundActivity extends BaseActivity implements OnClickListener
 		mDialog.dismiss();
 		Intent intent = new Intent(ApplyRefundActivity.this,
 				ApplySuccessActivity.class);
-
 		intent.putExtra("ordno", ordno);
 		intent.putExtra("qid", qidMsg);
 		intent.putExtra("price", price + "");

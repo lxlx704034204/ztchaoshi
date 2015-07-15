@@ -12,7 +12,7 @@ public class D {
 
 	public static final String VERSION_NAME = "阿尔卑斯山";
 
-	public static final int DB_VERSION = 150;
+	public static final int DB_VERSION = 153;
     public static final int LOAD_EVERY_PAGE_NUMBER=10;//分页加载每页加载的个数；
 	//定位开关
 	public static final Boolean LOCATION_SWITCH = true;
@@ -24,6 +24,7 @@ public class D {
 	/* download */
 	public static final String DOWN_YIN_LIAN = "http://mobile.unionpay.com/getclient?platform=android&type=securepayplugin";
    /* api */
+
 	public static final String BASIC_URL = "http://app.teambuy.com.cn/apnc";
 	public static final String TM_ADVER_PIC=BASIC_URL+"/m/sys/a/getappadv";
 	public static final String API_USER_REGISTER = BASIC_URL + "/m/user/a/register";
@@ -51,6 +52,7 @@ public class D {
 	public static final String API_SYS_GETNEWVER = BASIC_URL + "/m/sys/a/getnewver";
 	public static final String API_MY_GETTGORDER = BASIC_URL + "/m/my/a/getmyorder";
 	public static final String API_MY_FEEDBACK = BASIC_URL + "/m/my/a/feedback";
+	public static final String API_MY_TMORDERMX = BASIC_URL + "/m/my/a/getmytmordmx";//查看物流的订单明细
 	public static final String API_CPORD_UPDATEADDRESSS = BASIC_URL + "/m/cpord/a/editaddress";
 	public static final String API_ACTIVITY_SIGN_UP = BASIC_URL + "/m/cpord/a/hdnewbm";
 	public static final String API_TBH_SIGN_UP = BASIC_URL + "/m/cpord/a/tuanbohuibm";

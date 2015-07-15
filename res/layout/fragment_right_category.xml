@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/category_bg"
+    tools:context="com.iteambuysale.zhongtuan.activity.category.CategoryRight_Fragment">
+
+    <GridView
+        android:id="@+id/gv_colmn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="6dp"
+        ></GridView>
+
+</LinearLayout>

@@ -17,6 +17,7 @@ public abstract class SuperActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState, boolean isHome) {
 		super.onCreate(savedInstanceState);
 		mIsHome = isHome;
+
 	}
    
 	/**

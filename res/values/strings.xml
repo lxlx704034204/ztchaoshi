@@ -349,8 +349,15 @@
     <string name="contacts_1">深圳中团科技有限公司\n电话：020-85584512\n传真：020-85584512\n电子邮箱：568984480@qq.com\n网址：www.ztchaoshi.com</string>
 	<string name="advice_tag">请您反馈对中团的意见和建议</string>
 	<string name="advice_tag1">标题：</string>
+	<string name="category">分类</string>
+
 	<string name="advice_tag2">内容：</string>
 	<!--特卖主界面的搜索  -->
 	<string name="Sale_searh_hint">搜索特卖商品</string>
-	
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+
 </resources>

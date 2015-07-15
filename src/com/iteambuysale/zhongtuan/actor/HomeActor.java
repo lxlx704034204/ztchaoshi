@@ -17,6 +17,7 @@ import com.iteambuysale.zhongtuan.activity.me.PersonInfoFragment;
 import com.iteambuysale.zhongtuan.adapter.SuperFragmentPagerAdapter;
 import com.iteambuysale.zhongtuan.background.NetAsync;
 import com.iteambuysale.zhongtuan.define.D;
+import com.iteambuysale.zhongtuan.fragment.home.CategoryFragment;
 import com.iteambuysale.zhongtuan.fragment.home.MeFragment;
 import com.iteambuysale.zhongtuan.fragment.home.MeFragment_l;
 import com.iteambuysale.zhongtuan.fragment.home.SaleFragmentVersion2;
@@ -46,7 +47,8 @@ public class HomeActor extends SuperActor {
 		fList.add(new SaleFragmentVersion2());
 	/*	fList.add(new NearByFragment());
 		fList.add(new TuangouhuiFragment());*/
-		fList.add(new ShopFragment());
+		//fList.add(new ShopFragment());
+		fList.add(new CategoryFragment());
 		fList.add(new ShopCartFragment());
 		//fList.add(new MeFragment());
 		fList.add(new MeFragment_l());

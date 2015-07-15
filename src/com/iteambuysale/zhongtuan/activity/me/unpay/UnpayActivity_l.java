@@ -225,7 +225,7 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 	 * 确认收货
 	 * @param orderno
 	 */
-	private void ensureGetGoods(final String orderno) {
+	private void ensureGetGoods(final String orderno, final String onox) {
 		mProgressDialog.show();
 		NetAsync ensureorder = new NetAsync(
 				D.API_SPECIAL_ORDER_ENSURE_GOODS, this) {
@@ -238,13 +238,14 @@ public class UnpayActivity_l extends BaseActivity implements OnClickListener, Ne
 			@Override
 			public void beforeRequestInBackground(List<NameValuePair> params) {
 				params.add(new BasicNameValuePair("ordno", orderno));
+				params.add(new BasicNameValuePair("onox", onox));
 			}
 		};
 		ensureorder.execute();
 	}
 	@Override
-	public void ensureorder(String orderno) {
-		ensureGetGoods(orderno);
+	public void ensureorder(String orderno,String ordernox) {
+		ensureGetGoods(orderno,ordernox);
 		
 	}
 
